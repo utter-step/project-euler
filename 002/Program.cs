@@ -1,10 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using System.Diagnostics;
 using Tools;
 
 namespace _2
@@ -37,7 +33,7 @@ namespace _2
         
         static void Main(string[] args)
         {
-            Decorators.TimeItAccurate(SumOfEvenFibs, LIMIT, 100000);
+            Decorators.Benchmark(SumOfEvenFibs, LIMIT);
         }
 
         private static long SumOfEvenFibs(int limit)

@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
@@ -14,9 +10,7 @@ namespace _3
 
         static void Main(string[] args)
         {
-            Decorators.TimeIt(MaxPrimeFactor, NUM_TO_SOLVE);
-
-            Decorators.TimeItAccurate(MaxPrimeFactor, NUM_TO_SOLVE, 10);
+            Decorators.Benchmark(MaxPrimeFactor, NUM_TO_SOLVE);
         }
 
         private static long MaxPrimeFactor(long num)

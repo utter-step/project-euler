@@ -1,5 +1,7 @@
 using System;
 
+using Tools;
+
 namespace _6
 {
     class Program
@@ -27,9 +29,7 @@ namespace _6
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(SumSquareDifference, 100);
-
-            Tools.Decorators.TimeItAccurate(SumSquareDifference, 100, 10000000);
+            Decorators.Benchmark(SumSquareDifference, 100);
         }
     }
 }

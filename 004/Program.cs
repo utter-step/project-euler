@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+
+using Tools;
 
 namespace _4
 {
@@ -27,9 +25,7 @@ namespace _4
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(FindLargestPalindromic);
-
-            Tools.Decorators.TimeItAccurate(FindLargestPalindromic, 1000);
+            Decorators.Benchmark(FindLargestPalindromic);
         }
 
         private static int FindLargestPalindromic()
