@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tools;
 
 namespace _1
 {
@@ -12,9 +8,11 @@ namespace _1
 
         static void Main(string[] args)
         {
-            int res = SumOfDivisibleBy3And5(LIMIT);
+            Decorators.Benchmark(Solve);
+        }
 
-            Tools.Decorators.TimeItAccurate(SumOfDivisibleBy3And5, LIMIT, 100);
+        private static int Solve() {
+            return SumOfDivisibleBy3And5(LIMIT);
         }
 
         private static int SumOfDivisibleBy3And5(int limit)
