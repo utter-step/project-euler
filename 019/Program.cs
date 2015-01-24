@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _19
+namespace _019
 {
     class Program
     {

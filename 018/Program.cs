@@ -8,7 +8,7 @@ using System.IO;
 using System.Diagnostics;
 using Tools;
 
-namespace _18
+namespace _018
 {
     class Program
     {
