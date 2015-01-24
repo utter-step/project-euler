@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using System.Numerics;
 
-namespace _040
+namespace _40
 {
     class Program
     {

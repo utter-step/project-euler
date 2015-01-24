@@ -1,6 +1,6 @@
 using Tools;
 
-namespace _039
+namespace _39
 {
     static class Program
     {

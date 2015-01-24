@@ -5,7 +5,7 @@ using System.Linq;
 
 using Tools;
 
-namespace _074
+namespace _74
 {
     public class FactorialDigitsCycle : Cycle<int>
     {

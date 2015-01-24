@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tools;
 
-namespace _083
+namespace _83
 {
     class Program
     {

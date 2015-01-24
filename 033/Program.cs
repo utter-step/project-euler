@@ -7,7 +7,7 @@ using System.IO;
 
 using Tools;
 
-namespace _033
+namespace _33
 {
     static class Program
     {

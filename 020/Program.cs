@@ -1,7 +1,7 @@
 using System;
 using Tools;
 
-namespace _020
+namespace _20
 {
     static class Program
     {

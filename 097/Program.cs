@@ -2,7 +2,7 @@ using System;
 
 using Tools;
 
-namespace _097
+namespace _97
 {
     class Program
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Numerics;
 using Tools;
 
-namespace _016
+namespace _16
 {
     class Program
     {

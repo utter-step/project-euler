@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Tools;
 
-namespace _079
+namespace _79
 {
     class Program
     {

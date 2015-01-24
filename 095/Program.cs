@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Tools;
 
-namespace _095
+namespace _95
 {
     class Program
     {

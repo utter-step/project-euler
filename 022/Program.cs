@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-namespace _022
+namespace _22
 {
     class Program
     {

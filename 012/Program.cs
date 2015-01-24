@@ -8,7 +8,7 @@ using Tools;
 using System.Diagnostics;
 using System.Threading;
 
-namespace _012
+namespace _12
 {
     class Program
     {

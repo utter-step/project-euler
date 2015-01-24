@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _026
+namespace _26
 {
     public class Fraction
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Tools;
 
-namespace _027
+namespace _27
 {
     class Program
     {
