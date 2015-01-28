@@ -8,7 +8,8 @@ namespace _086
     {
         public static void Main(string[] args)
         {
-            Decorators.Benchmark(Solve, 1000000);
+            const int LIMIT = 1000000;
+            Decorators.Benchmark(Solve, LIMIT);
         }
 
         public static int Solve(int solutions)
@@ -40,6 +41,5 @@ namespace _086
 
             return -1;
         }
-
     }
 }
