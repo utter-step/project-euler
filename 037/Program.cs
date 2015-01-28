@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Tools;
 
-namespace _37
+namespace _037
 {
     class Program
     {

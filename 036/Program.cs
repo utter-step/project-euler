@@ -2,7 +2,7 @@ using System.Text;
 
 using Tools;
 
-namespace _36
+namespace _036
 {
     class Program
     {

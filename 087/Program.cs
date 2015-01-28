@@ -4,7 +4,7 @@ using System.Linq;
 
 using Tools;
 
-namespace _87
+namespace _087
 {
     class Program
     {

@@ -2,7 +2,7 @@ using System.Linq;
 
 using Tools;
 
-namespace _50
+namespace _050
 {
     static class Program
     {

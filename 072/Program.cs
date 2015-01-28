@@ -1,6 +1,6 @@
 using Tools;
 
-namespace _72
+namespace _072
 {
     class Program
     {

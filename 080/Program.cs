@@ -3,7 +3,7 @@ using System.Numerics;
 
 using Tools;
 
-namespace _80
+namespace _080
 {
     class Program
     {
