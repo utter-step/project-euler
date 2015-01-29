@@ -5,7 +5,11 @@ namespace Tools
 {
     public static class Decorators
     {
-        public static void Benchmark<TIn, TResult>(Func<TIn, TResult> func, TIn argument)
+        public static void Benchmark<TIn, TResult>(
+            Func<TIn, TResult> func,
+            TIn argument,
+            int milliseconds=1000
+        )
         {
             var stopwatch = new Stopwatch();
 
@@ -16,7 +20,7 @@ namespace Tools
             for (int i = 0; i < 3; i++)
             {
                 result = func.Invoke(argument);
-                if (stopwatch.ElapsedMilliseconds > 10000)
+                if (stopwatch.ElapsedMilliseconds > milliseconds * 10)
                 {
                     break;
                 }
@@ -24,7 +28,7 @@ namespace Tools
             #endregion
             stopwatch.Stop();
 
-            if (stopwatch.ElapsedMilliseconds / 3 > 1000)
+            if (stopwatch.ElapsedMilliseconds / 3 > milliseconds)
             {
                 Console.WriteLine("Result:\n{2}({3}) == {0}\n\nComputed in: {1} ms.", 
                     result,
@@ -38,7 +42,7 @@ namespace Tools
             stopwatch.Restart();
 
             long iterationsCount = 0;
-            while (stopwatch.ElapsedMilliseconds < 1000)
+            while (stopwatch.ElapsedMilliseconds < milliseconds)
             {
                 func.Invoke(argument);
                 iterationsCount++;
@@ -56,7 +60,7 @@ namespace Tools
             );
         }
 
-        public static void Benchmark<TResult>(Func<TResult> func)
+        public static void Benchmark<TResult>(Func<TResult> func, int milliseconds=1000)
         {
             var stopwatch = new Stopwatch();
 
@@ -67,7 +71,7 @@ namespace Tools
             for (int i = 0; i < 3; i++)
             {
                 result = func.Invoke();
-                if (stopwatch.ElapsedMilliseconds > 10000)
+                if (stopwatch.ElapsedMilliseconds > milliseconds * 10)
                 {
                     break;
                 }
@@ -75,7 +79,7 @@ namespace Tools
             #endregion
             stopwatch.Stop();
 
-            if (stopwatch.ElapsedMilliseconds / 3 > 1000)
+            if (stopwatch.ElapsedMilliseconds / 3 > milliseconds)
             {
                 Console.WriteLine("Result:\n{2}() == {0}\n\nComputed in: {1} ms.", 
                     result,
@@ -88,7 +92,7 @@ namespace Tools
             stopwatch.Restart();
 
             int iterationsCount = 0;
-            while (stopwatch.ElapsedMilliseconds < 1000)
+            while (stopwatch.ElapsedMilliseconds < milliseconds)
             {
                 func.Invoke();
                 iterationsCount++;
