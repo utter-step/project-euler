@@ -326,6 +326,13 @@ namespace Tools
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool IsSquare(int n)
+        {
+            var root = Math.Sqrt(n);
+            return (int)root == root;
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsPalindromic(string s)
         {
             int lastIndex = s.Length - 1;
