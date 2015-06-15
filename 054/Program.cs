@@ -15,15 +15,14 @@ namespace _054
 
         static void Main(string[] args)
         {
-			var handStrings = File.ReadAllLines(FILENAME);
-
+            var handStrings = File.ReadAllLines(FILENAME);
             Decorators.Benchmark(Solve, handStrings);
         }
 
         private static int Solve(string[] handStrings)
         {
-			return handStrings
-				.AsParallel()
+            return handStrings
+                .AsParallel()
                 .Select(CombinationsFromString)
                 .Count(combinations => combinations.Item1 > combinations.Item2);
         }

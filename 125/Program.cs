@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
@@ -17,7 +15,7 @@ namespace _125
 
         public static long Solve(int limit)
         {
-            HashSet<long> palindromicSums = new HashSet<long>();
+            var palindromicSums = new HashSet<long>();
 
             int squareLimit = (int)Math.Sqrt(limit) + 1;
 
