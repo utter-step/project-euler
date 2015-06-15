@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tools;
 
-namespace _8
+namespace _008
 {
     class Program
     {
@@ -27,7 +23,7 @@ namespace _8
 07198403850962455444362981230987879927244284909188
 84580156166097919133875499200524063689912560717606
 05886116467109405077541002256983155200055935729725
-71636269561882670428252483600823257530420752963450".Replace("\r\n", "");
+71636269561882670428252483600823257530420752963450".Replace("\n", "");
 
         private static int ProductOfDigits(int n)
         {
@@ -50,7 +46,7 @@ namespace _8
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeItAccurate(FindLagrestProduct, INPUT, 1000);
+            Decorators.Benchmark(FindLagrestProduct, INPUT);
         }
 
         private static int FindLagrestProduct(string input)

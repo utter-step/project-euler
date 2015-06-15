@@ -1,10 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Numerics;
 using Tools;
 
 namespace _016
@@ -25,9 +19,7 @@ namespace _016
 
         static void Main(string[] args)
         {
-            Decorators.TimeIt(SumOfDigitsInPowerOfTwo, 1000);
-
-            Decorators.TimeItAccurate(SumOfDigitsInPowerOfTwo, 1000, 10000);
+            Decorators.Benchmark(SumOfDigitsInPowerOfTwo, 1000);
         }
 
         private static int SumOfDigitsInPowerOfTwo(int power)

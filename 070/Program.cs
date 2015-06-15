@@ -72,8 +72,8 @@ namespace _070
             {
                 if (num % prime == 0)
                 {
-                    res.Add(prime);        
-                    do { num /= prime; 
+                    res.Add(prime);
+                    do { num /= prime;
                     } while (num % prime == 0);
                 }
             }

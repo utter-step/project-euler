@@ -43,7 +43,7 @@ namespace _099
                 {
                     max = curExp;
                     maxI = i;
-                } 
+                }
             }
 
             return maxI + 1;

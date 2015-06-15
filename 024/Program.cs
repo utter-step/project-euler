@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Tools;
 
@@ -27,11 +28,6 @@ namespace _024
 
                 return true;
             }
-
-            public override int GetHashCode(int[] obj)
-            {
-                return base.GetHashCode();
-            }
         }
 
         private static int CountUnique(int[][] array)
@@ -41,7 +37,7 @@ namespace _024
             var testSet = new HashSet<int[]>(array, arrayComparer);
 
             return testSet.Count;
-        } 
+        }
         #endregion
 
         private static int PermutationsLexicographicalCompare(int[] permutationA, int[] permutationB)
@@ -61,28 +57,29 @@ namespace _024
             return 0;
         }
 
+        private static long Solve(int num)
+        {
+            var permutations = Permutations.ProducePermutations(10).ToArray();
+            //Console.WriteLine(CountUnique(permutations));
+            Array.Sort(permutations, PermutationsLexicographicalCompare);
+
+            var resultingPermutation = permutations[num - 1];
+            long tenPow = (long)Math.Pow(10, resultingPermutation.Length - 1);
+
+            long res = 0;
+
+            foreach (var digit in resultingPermutation)
+            {
+                res += digit * tenPow;
+                tenPow /= 10;
+            }
+
+            return res;
+        }
+
         static void Main(string[] args)
         {
-            var stopwatch = new System.Diagnostics.Stopwatch();
-
-            stopwatch.Restart();
-            int[][] permutations = Permutations.ProducePermutations(10);
-            stopwatch.Stop();
-
-            Console.WriteLine("Generated permutations (array) in {0} ms.", stopwatch.ElapsedMilliseconds);
-
-            stopwatch.Restart();
-            Array.Sort(permutations, PermutationsLexicographicalCompare);
-            stopwatch.Stop();
-
-            Console.WriteLine("Sorted them in {0} ms.", stopwatch.ElapsedMilliseconds);
-
-            //foreach (var item in permutations[1000000 - 1])
-            //{
-            //    Console.Write(item);
-            //}
-
-            Console.WriteLine(permutations[0][0]);
+            Decorators.Benchmark(Solve, 1000000);
         }
     }
 }

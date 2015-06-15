@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using Tools;
 
-namespace _2
+namespace _002
 {
     class Program
     {
@@ -34,10 +34,10 @@ namespace _2
                 }
             }
         }
-        
+
         static void Main(string[] args)
         {
-            Decorators.TimeItAccurate(SumOfEvenFibs, LIMIT, 100000);
+            Decorators.Benchmark(SumOfEvenFibs, LIMIT);
         }
 
         private static long SumOfEvenFibs(int limit)

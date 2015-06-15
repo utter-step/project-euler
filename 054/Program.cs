@@ -17,7 +17,7 @@ namespace _054
         {
 			var handStrings = File.ReadAllLines(FILENAME);
 
-			Decorators.TimeItAccurate(Solve, handStrings, 100);
+            Decorators.Benchmark(Solve, handStrings);
         }
 
         private static int Solve(string[] handStrings)
@@ -89,10 +89,10 @@ namespace _054
                     { 'A', CardValue.Ace },
                 }
             );
-        
 
-        public struct Card : 
-            IComparable<Card>, 
+
+        public struct Card :
+            IComparable<Card>,
             IEquatable<Card>
         {
             public CardValue Value { get; private set; }
@@ -178,7 +178,7 @@ namespace _054
                 Hand = hand;
 
                 bool isStraight = true;
-                
+
                 // стрит -- каждая карта следует по старшинству за предыдущей (младше)
                 for (int i = 1; i < hand.Length && isStraight; i++)
                 {
@@ -270,7 +270,7 @@ namespace _054
                 {
                     // две пары
                     // из двух пар основная -- старшая
-                    Array.Sort(pairs, (cardsA, cardsB) => 
+                    Array.Sort(pairs, (cardsA, cardsB) =>
                         -cardsA[0].CompareTo(cardsB[0]));
 
                     SetComb(HandRank.TwoPairs, pairs[0], pairs[1]);
@@ -278,7 +278,7 @@ namespace _054
                 }
                 else if (pairs.Length == 1)
                 {
-
+                    // пара
                     SetComb(HandRank.OnePair, pairs[0]);
                     return;
                 }

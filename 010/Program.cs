@@ -6,9 +6,7 @@ namespace _010
     {
         static void Main(string[] args)
         {
-            Decorators.TimeIt(SumOfPrimes, 2000000);
-
-            Decorators.TimeItAccurate(SumOfPrimes, 2000000, 10);
+            Decorators.Benchmark(SumOfPrimes, 2000000);
         }
 
         private static long SumOfPrimes(int upperLimit)

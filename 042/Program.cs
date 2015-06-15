@@ -52,7 +52,7 @@ namespace _042
             int count = GetWords("words.txt").Count(IsTriangleWord);
             stopwatch.Stop();
 
-            Console.WriteLine("{0} triange words. {1} ms", count, stopwatch.ElapsedMilliseconds); 
+            Console.WriteLine("{0} triange words. {1} ms", count, stopwatch.ElapsedMilliseconds);
             #endregion
 
             #region Using LINQ expressions
@@ -61,7 +61,7 @@ namespace _042
                              select s.Trim('"')).Count(IsTriangleWord);
             stopwatch.Stop();
 
-            Console.WriteLine("{0} triange words. {1} ms", countLinq, stopwatch.ElapsedMilliseconds); 
+            Console.WriteLine("{0} triange words. {1} ms", countLinq, stopwatch.ElapsedMilliseconds);
             #endregion
         }
     }

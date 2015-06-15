@@ -78,4 +78,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{B7EC082C-690F-4DAA-92D0-8486893D8933}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

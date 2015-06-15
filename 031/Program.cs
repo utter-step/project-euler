@@ -36,7 +36,7 @@ namespace _031
             }
 
             return variants;
-        } 
+        }
         #endregion
 
         #region Recursive
@@ -70,7 +70,7 @@ namespace _031
 
             memo[targetSum, step] = res;
             return res;
-        } 
+        }
         #endregion
 
         #region Optimal

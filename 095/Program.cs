@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
@@ -13,12 +9,12 @@ namespace _095
         const int LIMIT = 1000000;
 
         private static int[] _divisorSums;
-        
+
         class AmicableCycle : Cycle<int>
         {
             public AmicableCycle(int initialState) : base(initialState)
             {
-                
+
             }
 
             protected override int MakeStep(int state)

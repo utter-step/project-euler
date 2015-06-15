@@ -1,4 +1,4 @@
-using System;
+using Tools;
 
 namespace _019
 {
@@ -9,21 +9,20 @@ namespace _019
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(CountGoodSundaysBetween1901And2001);
-
-            Tools.Decorators.TimeItAccurate(CountGoodSundaysBetween1901And2001, 1000);
+            Decorators.Benchmark(Solve);
         }
 
-        private static int CountGoodSundaysBetween1901And2001()
+        private static int Solve()
         {
             return CountSundaysOnFirst(YEAR_START, YEAR_END);
         }
 
-        private static int[] months = new int[] { 
-            31, 28, 31, 
-            30, 31, 30, 
-            31, 31, 30, 
-            31, 30, 31 };
+        private static int[] months = new int[] {
+            31, 28, 31,
+            30, 31, 30,
+            31, 31, 30,
+            31, 30, 31,
+        };
 
         private static int CountSundaysOnFirst(int startingYear, int endingYear)
         {
@@ -51,7 +50,7 @@ namespace _019
                         }
                         else
                         {
-                            startingDay = (startingDay + 28) % 7; 
+                            startingDay = (startingDay + 28) % 7;
                         }
                     }
                 }

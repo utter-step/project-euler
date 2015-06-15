@@ -110,7 +110,7 @@ namespace _033
 
             return res.Denominator;
         }
-        
+
         static void Main(string[] args)
         {
             Decorators.TimeItAccurate(ComputeSolution, 1);

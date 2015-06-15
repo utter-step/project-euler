@@ -3,15 +3,22 @@ using System.Linq;
 
 using Tools;
 
-namespace _7
+namespace _007
 {
     class Program
     {
         private static int Solve(int position)
         {
-            int multiplier = 10 * (int)Math.Log(Math.Log(position));
+            int lim = (int)(position
+                * Math.Log(position)
+                * Math.Log(Math.Log(position)));
 
-            return NumUtils.EratospheneSeive(position * multiplier).ToArray()[position - 1];
+            if (position < 6)
+            {
+                lim = 12;
+            }
+
+            return NumUtils.EratospheneSeive(lim).ElementAt(position + 1);
         }
 
         static void Main(string[] args)

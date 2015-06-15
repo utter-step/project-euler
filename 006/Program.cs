@@ -1,12 +1,13 @@
 using System;
+using Tools;
 
-namespace _6
+namespace _006
 {
     class Program
     {
         private static long SumOfSquares(int start, int end)
         {
-            Func<int, long> sumOfSquares = x => (((long)x + 1) * (2 * x + 1) * x) / 6; 
+            Func<int, long> sumOfSquares = x => (((long)x + 1) * (2 * x + 1) * x) / 6;
 
             long res = sumOfSquares(end) - sumOfSquares(start - 1);
 
@@ -27,9 +28,7 @@ namespace _6
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(SumSquareDifference, 100);
-
-            Tools.Decorators.TimeItAccurate(SumSquareDifference, 100, 10000000);
+            Decorators.Benchmark(SumSquareDifference, 100);
         }
     }
 }

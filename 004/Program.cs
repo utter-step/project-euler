@@ -1,35 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using Tools;
 
-namespace _4
+namespace _004
 {
     class Program
     {
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static bool IsPalindrome(int num)
-        {
-            var s = num.ToString();
-            int length = s.Length;
-
-            for (int i = 0; i < length / 2; i++)
-            {
-                if (s[i] != s[length - i - 1])
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(FindLargestPalindromic);
-
-            Tools.Decorators.TimeItAccurate(FindLargestPalindromic, 1000);
+            Decorators.Benchmark(FindLargestPalindromic, 1000);
         }
 
         private static int FindLargestPalindromic()
@@ -44,7 +21,7 @@ namespace _4
                         break;
                     }
 
-                    if (IsPalindrome(i * j))
+                    if (NumUtils.IsPalindromic((i * j).ToString()))
                     {
                         max = max < i * j ? i * j : max;
                     }

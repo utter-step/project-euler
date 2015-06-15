@@ -10,7 +10,7 @@ namespace _087
     {
         static void Main(string[] args)
         {
-            Decorators.TimeItAccurate(Solve, 50000000, 40);
+            Decorators.Benchmark(Solve, 50000000);
         }
 
         private static int Solve(int upperLimit)

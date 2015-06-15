@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Tools;
 
-namespace _9
+namespace _009
 {
     class Program
     {

@@ -62,7 +62,7 @@ namespace _026
             List<int> decimalDigits = new List<int>();
             int numerator = Numerator;
             int denominator = Denominator;
-            
+
             while (numerator % denominator != 0)
             {
                 if (numerator < denominator)
@@ -124,7 +124,7 @@ namespace _026
                         sb.Append(_decimalDigits[i]);
                     }
                     sb.Append(')');
-                } 
+                }
             }
 
             return String.Format("{0}/{1} == {2}", Numerator + IntegerPart * Denominator, Denominator, sb);

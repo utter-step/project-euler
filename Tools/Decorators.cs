@@ -50,7 +50,7 @@ namespace Tools
 
             stopwatch.Stop();
 
-            Console.WriteLine("Result:\n{4}({5}) == {0}\n\n{1} iterations done in {2} ms.\nAverage time: {3:f7} ms.",
+            Console.WriteLine("Result:\n{4}({5}) == {0}\n\n{1} iterations done in {2} ms.\nAverage time: {3:f5} ms.",
                 result,
                 iterationsCount,
                 stopwatch.ElapsedMilliseconds,
@@ -100,7 +100,7 @@ namespace Tools
 
             stopwatch.Stop();
 
-            Console.WriteLine("Result:\n{4}() == {0}\n\n{1} iterations done in {2} ms.\nAverage time: {3:f7} ms.",
+            Console.WriteLine("Result:\n{4}() == {0}\n\n{1} iterations done in {2} ms.\nAverage time: {3:f5} ms.",
                 result,
                 iterationsCount,
                 stopwatch.ElapsedMilliseconds,

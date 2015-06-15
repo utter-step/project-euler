@@ -1,12 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
-using System.Diagnostics;
-using System.Threading;
 
 namespace _012
 {
@@ -40,9 +35,7 @@ namespace _012
 
         static void Main(string[] args)
         {
-            Decorators.TimeIt(Solve, 500);
-
-            Decorators.TimeItAccurate(Solve, 500, 100);
+            Decorators.Benchmark(Solve, 500);
         }
 
         private static int Solve(int divisorsMinimum)
@@ -140,7 +133,7 @@ namespace _012
         //        retval--;
         //    factors[n] = retval;
         //    return retval;
-        //} 
+        //}
         //#endregion
     }
 }

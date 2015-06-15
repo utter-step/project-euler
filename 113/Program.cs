@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.Numerics;
 
 using Tools;
@@ -40,7 +36,7 @@ namespace _113
         private static int[][] stills;
         private static int[][] downs;
 
-        private static void FillArrays(int steps) 
+        private static void FillArrays(int steps)
         {
 
         }

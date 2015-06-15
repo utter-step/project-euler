@@ -20,7 +20,7 @@ namespace _043
             11,
             13,
             17
-        }; 
+        };
         #endregion
 
         private static bool CheckProperty(int[] perm)

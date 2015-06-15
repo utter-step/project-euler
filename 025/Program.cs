@@ -15,10 +15,10 @@ namespace _025
                 return lo;
             }
 
-            var  fib = new DynamicMatrix(new BigInteger[,] 
-            { 
+            var  fib = new DynamicMatrix(new BigInteger[,]
+            {
                 { 0, 1 },
-                { 1, 1 } 
+                { 1, 1 }
             });
 
             int med = lo + (hi - lo) / 2;

@@ -1,9 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Tools;
 
 namespace _112
@@ -57,8 +52,8 @@ namespace _112
                 n /= 10;
                 currentDigit = n % 10;
 
-                currentSign = Math.Sign(prevDigit - currentDigit); 
-                
+                currentSign = Math.Sign(prevDigit - currentDigit);
+
                 if (currentSign != 0 && currentSign != sign)
                 {
                     return true;

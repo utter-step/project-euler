@@ -1,0 +1,1338 @@
+XBuild Engine Version 12.0
+Mono, Version 3.12.0.0
+Copyright (C) 2005-2013 Various Mono authors
+Loading default tasks for ToolsVersion: 2.0 from /usr/lib/mono/2.0/Microsoft.Common.tasks
+
+Build started 29.01.2015 23:33:40.
+__________________________________________________
+Loading default tasks for ToolsVersion: 4.0 from /usr/lib/mono/4.5/Microsoft.Common.tasks
+/home/utterstep/prog/csharp/project-euler/086/086.csproj: Importing project /usr/lib/mono/4.5/Microsoft.CSharp.targets 
+/usr/lib/mono/4.5/Microsoft.CSharp.targets: Importing project /usr/lib/mono/4.5/Microsoft.Common.targets 
+Project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" (default target(s)):
+
+Initial Properties:
+_ = /usr/bin/xbuild
+AssemblyName = 086
+CLUTTER_IM_MODULE = xim
+COLORTERM = gnome-terminal
+COMPIZ_BIN_PATH = /usr/bin/
+COMPIZ_CONFIG_PROFILE = ubuntu
+Configuration = Debug
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-8pmziBy2XW
+DebugSymbols = true
+DebugType = full
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+DefineConstants = DEBUG;
+DESKTOP_SESSION = ubuntu
+DISPLAY = :0
+ErrorReport = prompt
+Externalconsole = true
+GDM_LANG = ru
+GDMSESSION = ubuntu
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+GNOME_KEYRING_CONTROL = /run/user/1000/keyring-KQAHKW
+GNOME_KEYRING_PID = 21995
+GPG_AGENT_INFO = /run/user/1000/keyring-KQAHKW/gpg:0:1
+GTK_IM_MODULE = xim
+GTK_MODULES = overlay-scrollbar:unity-gtk-module
+HOME = /home/utterstep
+IM_CONFIG_PHASE = 1
+INSTANCE = 
+JOB = unity-settings-daemon
+LANG = ru_RU.UTF-8
+LANGUAGE = ru
+LESSCLOSE = /usr/bin/lesspipe %s %s
+LESSOPEN = | /usr/bin/lesspipe %s
+LOGNAME = utterstep
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+MSBuildBinPath = /usr/lib/mono/4.5
+MSBuildExtensionsPath = /usr/lib/mono/xbuild
+MSBuildExtensionsPath32 = /usr/lib/mono/xbuild
+MSBuildExtensionsPath64 = /usr/lib/mono/xbuild
+MSBuildProjectDefaultTargets = Build
+MSBuildProjectDirectory = /home/utterstep/prog/csharp/project-euler/086
+MSBuildProjectExtension = .csproj
+MSBuildProjectFile = 086.csproj
+MSBuildProjectFullPath = /home/utterstep/prog/csharp/project-euler/086/086.csproj
+MSBuildProjectName = 086
+MSBuildThisFile = 086.csproj
+MSBuildThisFileDirectory = /home/utterstep/prog/csharp/project-euler/086/
+MSBuildThisFileDirectoryNoRoot = home/utterstep/prog/csharp/project-euler/086/
+MSBuildThisFileExtension = .csproj
+MSBuildThisFileFullPath = /home/utterstep/prog/csharp/project-euler/086/086.csproj
+MSBuildThisFileName = 086
+MSBuildToolsPath = /usr/lib/mono/4.5
+MSBuildToolsRoot = /usr/lib/mono
+MSBuildToolsVersion = 4.0
+OLDPWD = /tmp
+Optimize = false
+OS = Unix
+OutputPath = bin\Debug
+OutputType = Exe
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+Platform = AnyCPU
+ProjectGuid = {7672CE1D-9F20-4AC5-9F55-F01DB7AE4806}
+PWD = /home/utterstep/prog/csharp/project-euler/086
+QT_IM_MODULE = ibus
+QT_QPA_PLATFORMTHEME = appmenu-qt5
+QT4_IM_MODULE = xim
+SESSION = ubuntu
+SESSIONTYPE = gnome-session
+SHELL = /bin/bash
+SHLVL = 1
+SSH_AUTH_SOCK = /run/user/1000/keyring-KQAHKW/ssh
+TargetFrameworkVersion = v4.5
+TERM = xterm
+TEXTDOMAIN = im-config
+TEXTDOMAINDIR = /usr/share/locale/
+UPSTART_EVENTS = xsession started
+UPSTART_INSTANCE = 
+UPSTART_JOB = unity7
+UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/21997
+USER = utterstep
+VTE_VERSION = 3603
+WarningLevel = 4
+WINDOWID = 73400331
+XAUTHORITY = /home/utterstep/.Xauthority
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP = Unity
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/utterstep
+XDG_RUNTIME_DIR = /run/user/1000
+XDG_SEAT = seat0
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_DESKTOP = ubuntu
+XDG_SESSION_ID = c4
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+XDG_SESSION_TYPE = x11
+XDG_VTNR = 7
+XMODIFIERS = @im=ibus
+
+Initial Items:
+/home/utterstep/prog/csharp/project-euler/086/086.csproj: Importing project /usr/lib/mono/4.5/Microsoft.CSharp.targets 
+/usr/lib/mono/4.5/Microsoft.CSharp.targets: Importing project /usr/lib/mono/4.5/Microsoft.Common.targets 
+Building target "_ValidateEssentialProperties" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+Done building target "_ValidateEssentialProperties" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+Building target "Build" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+Building target "BuildOnlySettings" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Done building target "BuildOnlySettings" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Building target "BeforeBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Done building target "BeforeBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Building target "CoreBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+	Target PrepareForBuild:
+	Task "Message"
+		Using task Message from Microsoft.Build.Tasks.Message, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Configuration: Debug Platform: AnyCPU
+	Done executing task "Message"
+	Task "FindAppConfigFile"
+		Using task FindAppConfigFile from Microsoft.Build.Tasks.FindAppConfigFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "FindAppConfigFile"
+	Task "MakeDir"
+		Using task MakeDir from Microsoft.Build.Tasks.MakeDir, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "MakeDir"
+	Done building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+	Target GetFrameworkPaths:
+	Task "GetFrameworkPath"
+		Using task GetFrameworkPath from Microsoft.Build.Tasks.GetFrameworkPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "GetFrameworkPath"
+	Task "CreateProperty"
+		Using task CreateProperty from Microsoft.Build.Tasks.CreateProperty, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateProperty"
+	Done building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+	Target GetReferenceAssemblyPaths:
+	Task "CreateProperty"
+		Using task CreateProperty from Microsoft.Build.Tasks.CreateProperty, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateProperty"
+	Task "GetReferenceAssemblyPaths"
+		Using task GetReferenceAssemblyPaths from Microsoft.Build.Tasks.GetReferenceAssemblyPaths, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Looking for framework '.NETFramework,Version=v4.5' in root path '/usr/lib/mono/4.5/../xbuild-frameworks'
+		Found framework definition list '/usr/lib/mono/4.5/../xbuild-frameworks/.NETFramework/v4.5/RedistList/FrameworkList.xml' for framework '.NETFramework,Version=v4.5'
+	Done executing task "GetReferenceAssemblyPaths"
+	Done building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "PreBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Target PreBuildEvent skipped due to false condition: '$(PreBuildEvent)' != ''
+Done building target "PreBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "ResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "BeforeResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Done building target "BeforeResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "ResolveProjectReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "SplitProjectReferencesByExistent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveProjectReferences" depends on it.
+Building target "AssignProjectConfiguration" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "SplitProjectReferencesByExistent" depends on it.
+	Target AssignProjectConfiguration:
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Done building target "AssignProjectConfiguration" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "AssignProjectConfiguration" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "SplitProjectReferencesByExistent" depends on it.
+	Target SplitProjectReferencesByExistent:
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Done building target "SplitProjectReferencesByExistent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "SplitProjectReferencesByExistent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveProjectReferences" depends on it.
+	Target ResolveProjectReferences:
+	Task "MSBuild"
+		Using task MSBuild from Microsoft.Build.Tasks.MSBuild, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Global Properties:
+		/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj: Importing project /usr/lib/mono/4.5/Microsoft.CSharp.targets 
+		/usr/lib/mono/4.5/Microsoft.CSharp.targets: Importing project /usr/lib/mono/4.5/Microsoft.Common.targets 
+		Project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" (default target(s)):
+		Initial Properties:
+		_ = /usr/bin/xbuild
+		_OriginalConfiguration = $(Configuration)
+		_OriginalPlatform = $(Platform)
+		AddAdditionalExplicitAssemblyReferences = true
+		AdditionalExplicitAssemblyReferences = System.Core;$(AdditionalExplicitAssemblyReferences)
+		AllowedReferenceAssemblyFileExtensions = 
+					.exe;
+					.dll
+				
+		AllowedReferenceRelatedFileExtensions = 
+					.exe.mdb;
+					.dll.mdb;
+					.xml
+				
+		AppDesignerFolder = Properties
+		AssemblyName = Tools
+		AssemblySearchPaths = 
+					{CandidateAssemblyFiles};
+					$(ReferencePath);
+					@(AdditionalReferencePath);
+					{HintPathFromItem};
+					{TargetFrameworkDirectory};
+					{PkgConfig};
+					{GAC};
+					{RawFileName};
+					$(OutDir)
+				
+		BaseIntermediateOutputPath = obj\
+		BuildDependsOn = 
+					BuildOnlySettings;
+					BeforeBuild;
+					CoreBuild;
+					AfterBuild
+				
+		CleanDependsOn = 
+					BeforeClean;
+					CleanReferencedProjects;
+					CoreClean;
+					AfterClean
+				
+		CleanFile = $(MSBuildProjectFile).FilesWrittenAbsolute.txt
+		CLUTTER_IM_MODULE = xim
+		COLORTERM = gnome-terminal
+		CompileDependsOn = 
+					ResolveReferences;
+					GenerateTargetFrameworkMonikerAttribute;
+					BeforeCompile;
+					_TimestampBeforeCompile;
+					CoreCompile;
+					_TimestampAfterCompile;
+					AfterCompile
+				
+		CompileLicxFilesDependsOn = 
+		COMPIZ_BIN_PATH = /usr/bin/
+		COMPIZ_CONFIG_PROFILE = ubuntu
+		Configuration = Debug
+		ConfigurationName = $(Configuration)
+		CoreBuildDependsOn = 
+					PrepareForBuild;
+					GetFrameworkPaths;
+					GetReferenceAssemblyPaths;
+					PreBuildEvent;
+					ResolveReferences;
+					CopyFilesMarkedCopyLocal;
+					PrepareResources;
+					Compile;
+					PrepareForRun;
+					DeployOutputFiles;
+					_RecordCleanFile;
+					PostBuildEvent
+				
+		CoreCompileDependsOn = 
+		CreateManifestResourceNamesDependsOn = 
+		DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-8pmziBy2XW
+		DebugSymbols = true
+		DebugType = full
+		DefaultLanguageSourceExtension = .cs
+		DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+		DefineConstants = DEBUG;TRACE
+		DESKTOP_SESSION = ubuntu
+		DISPLAY = :0
+		ErrorReport = prompt
+		FileAlignment = 512
+		GDM_LANG = ru
+		GDMSESSION = ubuntu
+		GenerateTargetFrameworkAttribute = true
+		GetFrameworkPathsDependsOn = 
+		GetReferenceAssemblyPathsDependsOn = 
+		GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+		GNOME_KEYRING_CONTROL = /run/user/1000/keyring-KQAHKW
+		GNOME_KEYRING_PID = 21995
+		GPG_AGENT_INFO = /run/user/1000/keyring-KQAHKW/gpg:0:1
+		GTK_IM_MODULE = xim
+		GTK_MODULES = overlay-scrollbar:unity-gtk-module
+		HOME = /home/utterstep
+		IM_CONFIG_PHASE = 1
+		ImplicitlyExpandDesignTimeFacades = true
+		ImplicitlyExpandDesignTimeFacadesDependsOn = 
+					$(ImplicitlyExpandDesignTimeFacadesDependsOn);
+					GetReferenceAssemblyPaths
+				
+		ImportByWildcardAfterMicrosoftCommonTargets = true
+		ImportByWildcardBeforeMicrosoftCommonTargets = true
+		INSTANCE = 
+		IntermediateOutputPath = $(BaseIntermediateOutputPath)$(Configuration)\
+		JOB = unity-settings-daemon
+		LANG = ru_RU.UTF-8
+		Language = C#
+		LESSCLOSE = /usr/bin/lesspipe %s %s
+		LESSOPEN = | /usr/bin/lesspipe %s
+		LOGNAME = utterstep
+		LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+		MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+		MSBuildAllProjects = $(MSBuildAllProjects);$(MSBuildProjectFullPath);$(MSBuildToolsPath)\Microsoft.Common.targets
+		MSBuildBinPath = /usr/lib/mono/4.5
+		MSBuildExtensionsPath = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath32 = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath64 = /usr/lib/mono/xbuild
+		MSBuildProjectDefaultTargets = Build
+		MSBuildProjectDirectory = /home/utterstep/prog/csharp/project-euler/Tools
+		MSBuildProjectExtension = .csproj
+		MSBuildProjectFile = Tools.csproj
+		MSBuildProjectFullPath = /home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj
+		MSBuildProjectName = Tools
+		MSBuildThisFile = Microsoft.Common.targets
+		MSBuildThisFileDirectory = /usr/lib/mono/4.5/
+		MSBuildThisFileDirectoryNoRoot = usr/lib/mono/4.5/
+		MSBuildThisFileExtension = .targets
+		MSBuildThisFileFullPath = /usr/lib/mono/4.5/Microsoft.Common.targets
+		MSBuildThisFileName = Microsoft.Common
+		MSBuildToolsPath = /usr/lib/mono/4.5
+		MSBuildToolsRoot = /usr/lib/mono
+		MSBuildToolsVersion = 4.0
+		NoCompilerStandardLib = true
+		OLDPWD = /tmp
+		Optimize = false
+		OS = Unix
+		OutDir = $(OutputPath)
+		OutputPath = bin\Debug\
+		OutputType = Library
+		PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+		Platform = AnyCPU
+		PlatformName = $(Platform)
+		PostBuildEventDependsOn = 
+		PreBuildEventDependsOn = 
+		PrepareForRunDependsOn = 
+					DeployOutputFiles
+				
+		PrepareResourcesDependsOn = 
+					AssignTargetPaths;
+					SplitResourcesByCulture;
+					CreateManifestResourceNames;
+					CopyNonResxEmbeddedResources;
+					GenerateResources;
+					GenerateSatelliteAssemblies;
+					CompileLicxFiles
+				
+		ProjectDir = $(MSBuildProjectDirectory)\
+		ProjectGuid = {B7EC082C-690F-4DAA-92D0-8486893D8933}
+		PWD = /home/utterstep/prog/csharp/project-euler/086
+		QT_IM_MODULE = ibus
+		QT_QPA_PLATFORMTHEME = appmenu-qt5
+		QT4_IM_MODULE = xim
+		RebuildDependsOn = 
+					BeforeRebuild;
+					Clean;
+					$(MSBuildProjectDefaultTargets);
+					AfterRebuild;
+				
+		ResolveAssemblyReferencesDependsOn = $(ResolveAssemblyReferencesDependsOn);_AddCorlibReference
+		ResolveReferencesDependsOn = 
+					$(ResolveReferencesDependsOn);
+					ImplicitlyExpandDesignTimeFacades
+				
+		RootNamespace = Tools
+		SESSION = ubuntu
+		SESSIONTYPE = gnome-session
+		SHELL = /bin/bash
+		SHLVL = 1
+		SkipCopyUnchangedFiles = true
+		SSH_AUTH_SOCK = /run/user/1000/keyring-KQAHKW/ssh
+		TargetDir = @(_OutDirItem->'%(FullPath)')
+		TargetExt = .dll
+		TargetFileName = $(TargetName)$(TargetExt)
+		TargetFrameworkIdentifier = .NETFramework
+		TargetFrameworkMoniker = $(TargetFrameworkIdentifier),Version=$(TargetFrameworkVersion)
+		TargetFrameworkMonikerAssemblyAttributesPath = $(IntermediateOutputPath)$(TargetFrameworkMoniker).AssemblyAttribute$(DefaultLanguageSourceExtension)
+		TargetFrameworkMonikerAssemblyAttributeText = 
+		// <autogenerated />
+		[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute("$(TargetFrameworkMoniker)", FrameworkDisplayName = "$(TargetFrameworkMonikerDisplayName)")]
+				
+		TargetFrameworkVersion = v4.5
+		TargetName = $(AssemblyName)
+		TargetPath = @(_OutDirItem->'%(FullPath)\$(TargetFileName)')
+		TERM = xterm
+		TEXTDOMAIN = im-config
+		TEXTDOMAINDIR = /usr/share/locale/
+		UPSTART_EVENTS = xsession started
+		UPSTART_INSTANCE = 
+		UPSTART_JOB = unity7
+		UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/21997
+		USER = utterstep
+		VisualStudioVersion = 11.0
+		VTE_VERSION = 3603
+		WarningLevel = 4
+		WINDOWID = 73400331
+		XAUTHORITY = /home/utterstep/.Xauthority
+		XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+		XDG_CURRENT_DESKTOP = Unity
+		XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+		XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/utterstep
+		XDG_RUNTIME_DIR = /run/user/1000
+		XDG_SEAT = seat0
+		XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+		XDG_SESSION_DESKTOP = ubuntu
+		XDG_SESSION_ID = c4
+		XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+		XDG_SESSION_TYPE = x11
+		XDG_VTNR = 7
+		XMODIFIERS = @im=ibus
+		Initial Items:
+		_OutDirItem
+			bin/Debug/
+		Compile
+			Cycle.cs
+			Decorators.cs
+			Extensions.cs
+			Fraction.cs
+			LongInteger.cs
+			Matrix.cs
+			NumberAsFactorization.cs
+			NumUtils.cs
+			Permutations.cs
+			Properties/AssemblyInfo.cs
+		FileWrites
+			obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+		IntermediateAssembly
+			obj/Debug/Tools.dll
+		Reference
+			System
+			System.Core
+			System.Numerics
+			System.Xml.Linq
+			System.Data.DataSetExtensions
+			Microsoft.CSharp
+			System.Data
+			System.Xml
+		Building target "_ValidateEssentialProperties" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Done building target "_ValidateEssentialProperties" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Building target "Build" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Building target "BuildOnlySettings" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Done building target "BuildOnlySettings" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Building target "BeforeBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Done building target "BeforeBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Building target "CoreBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+			Target PrepareForBuild:
+			Task "Message"
+				Using task Message from Microsoft.Build.Tasks.Message, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+				Configuration: Debug Platform: AnyCPU
+			Done executing task "Message"
+			Task "FindAppConfigFile"
+				Using task FindAppConfigFile from Microsoft.Build.Tasks.FindAppConfigFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "FindAppConfigFile"
+			Task "MakeDir"
+				Using task MakeDir from Microsoft.Build.Tasks.MakeDir, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "MakeDir"
+			Done building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "PrepareForBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+			Target GetFrameworkPaths:
+			Task "GetFrameworkPath"
+				Using task GetFrameworkPath from Microsoft.Build.Tasks.GetFrameworkPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "GetFrameworkPath"
+			Task "CreateProperty"
+				Using task CreateProperty from Microsoft.Build.Tasks.CreateProperty, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateProperty"
+			Done building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "GetFrameworkPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+			Target GetReferenceAssemblyPaths:
+			Task "CreateProperty"
+				Using task CreateProperty from Microsoft.Build.Tasks.CreateProperty, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateProperty"
+			Task "GetReferenceAssemblyPaths"
+				Using task GetReferenceAssemblyPaths from Microsoft.Build.Tasks.GetReferenceAssemblyPaths, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+				Looking for framework '.NETFramework,Version=v4.5' in root path '/usr/lib/mono/4.5/../xbuild-frameworks'
+				Found framework definition list '/usr/lib/mono/4.5/../xbuild-frameworks/.NETFramework/v4.5/RedistList/FrameworkList.xml' for framework '.NETFramework,Version=v4.5'
+			Done executing task "GetReferenceAssemblyPaths"
+			Done building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "GetReferenceAssemblyPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "PreBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Target PreBuildEvent skipped due to false condition: '$(PreBuildEvent)' != ''
+		Done building target "PreBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "ResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "BeforeResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Done building target "BeforeResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "ResolveProjectReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "SplitProjectReferencesByExistent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveProjectReferences" depends on it.
+		Building target "AssignProjectConfiguration" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "SplitProjectReferencesByExistent" depends on it.
+		Target AssignProjectConfiguration skipped due to false condition: '@(ProjectReference)' != ''
+		Done building target "AssignProjectConfiguration" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "SplitProjectReferencesByExistent" depends on it.
+		Done building target "SplitProjectReferencesByExistent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveProjectReferences" depends on it.
+		Done building target "ResolveProjectReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "_AddCorlibReference" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "ResolveAssemblyReferences" depends on it.
+		Done building target "_AddCorlibReference" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "ResolveAssemblyReferences" depends on it.
+			Target ResolveAssemblyReferences:
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Task "ResolveAssemblyReference"
+				Using task ResolveAssemblyReference from Microsoft.Build.Tasks.ResolveAssemblyReference, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+				TargetFrameworkDirectories:
+					/usr/lib/mono/4.5
+					/usr/lib/mono/4.5/Facades/
+				SearchPaths:
+					{CandidateAssemblyFiles}
+					{HintPathFromItem}
+					{TargetFrameworkDirectory}
+					{PkgConfig}
+					{GAC}
+					{RawFileName}
+					bin/Debug/
+				Primary Reference System
+					Reference System resolved to /usr/lib/mono/4.5/System.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Numerics
+					Reference System.Numerics resolved to /usr/lib/mono/4.5/System.Numerics.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Xml.Linq
+					Reference System.Xml.Linq resolved to /usr/lib/mono/4.5/System.Xml.Linq.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Data.DataSetExtensions
+					Reference System.Data.DataSetExtensions resolved to /usr/lib/mono/4.5/System.Data.DataSetExtensions.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference Microsoft.CSharp
+					Reference Microsoft.CSharp resolved to /usr/lib/mono/4.5/Microsoft.CSharp.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Data
+					Reference System.Data resolved to /usr/lib/mono/4.5/System.Data.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Xml
+					Reference System.Xml resolved to /usr/lib/mono/4.5/System.Xml.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference System.Core
+					Reference System.Core resolved to /usr/lib/mono/4.5/System.Core.dll. CopyLocal = False
+					Reference found at search path {TargetFrameworkDirectory}
+				For searchpath {CandidateAssemblyFiles}
+				Warning: {CandidateAssemblyFiles} not supported currently
+				For searchpath {HintPathFromItem}
+				HintPath attribute not found
+				For searchpath {TargetFrameworkDirectory}
+				Primary Reference from AssemblyFiles /usr/lib/mono/4.5/mscorlib.dll
+			Done executing task "ResolveAssemblyReference"
+			Done building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "AfterResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Done building target "AfterResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Building target "ImplicitlyExpandDesignTimeFacades" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Done building target "ImplicitlyExpandDesignTimeFacades" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+		Done building target "ResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+			Target CopyFilesMarkedCopyLocal:
+			Task "Copy"
+				Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "Copy"
+			Done building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "PrepareResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+			Target AssignTargetPaths:
+			Task "AssignTargetPath"
+				Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "AssignTargetPath"
+			Task "AssignTargetPath"
+				Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "AssignTargetPath"
+			Task "AssignTargetPath"
+				Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "AssignTargetPath"
+			Done building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+			Target SplitResourcesByCulture:
+			Task "AssignCulture"
+				Using task AssignCulture from Microsoft.Build.Tasks.AssignCulture, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "AssignCulture"
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Done building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Building target "CreateManifestResourceNames" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "PrepareResources" depends on it.
+		Done building target "CreateManifestResourceNames" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "PrepareResources" depends on it.
+		Building target "CopyNonResxEmbeddedResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Target CopyNonResxEmbeddedResources skipped due to false condition: '@(NonResxWithCulture)' != '' or '@(NonResxWithNoCulture)' != '' or '@(ManifestNonResxWithCulture)' != '' or '@(ManifestNonResxWithNoCulture)' != ''
+		Done building target "CopyNonResxEmbeddedResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Building target "GenerateResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Done building target "GenerateResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+			Target GenerateSatelliteAssemblies:
+			No input files were specified for target GenerateSatelliteAssemblies, skipping.
+			Done building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Building target "CompileLicxFiles" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Target CompileLicxFiles skipped due to false condition: '@(LicxFiles)' != ''
+		Done building target "CompileLicxFiles" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+		Done building target "PrepareResources" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "Compile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+			Target GenerateTargetFrameworkMonikerAttribute:
+			Skipping target "GenerateTargetFrameworkMonikerAttribute" because its outputs are up-to-date.
+			Done building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Building target "BeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Done building target "BeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Building target "_TimestampBeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Target _TimestampBeforeCompile skipped due to false condition: '$(RunPostBuildEvent)' == 'OnOutputUpdated'
+		Done building target "_TimestampBeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "Compile" depends on it.
+			Target CoreCompile:
+			Skipping target "CoreCompile" because its outputs are up-to-date.
+			Done building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "Compile" depends on it.
+		Building target "_TimestampAfterCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Target _TimestampAfterCompile skipped due to false condition: '$(RunPostBuildEvent)' == 'OnOutputUpdated'
+		Done building target "_TimestampAfterCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Building target "AfterCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Done building target "AfterCompile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+		Done building target "Compile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "PrepareForRun" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareForRun" depends on it.
+		Building target "_CopyDeployFilesToOutputDirectory" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+		Building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Done building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Building target "_CopyDeployFilesToOutputDirectoryAlways" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Target _CopyDeployFilesToOutputDirectoryAlways skipped due to false condition: '@(ItemsToCopyToOutputDirectoryAlways)' != ''
+		Done building target "_CopyDeployFilesToOutputDirectoryAlways" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Building target "_CopyDeployFilesToOutputDirectoryPreserveNewest" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Target _CopyDeployFilesToOutputDirectoryPreserveNewest skipped due to false condition: '@(ItemsToCopyToOutputDirectoryPreserveNewest)' != ''
+		Done building target "_CopyDeployFilesToOutputDirectoryPreserveNewest" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+		Done building target "_CopyDeployFilesToOutputDirectory" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+		Building target "_CopyAppConfigFile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+		Target _CopyAppConfigFile skipped due to false condition: '@(AppConfigWithTargetPath)' != ''
+		Done building target "_CopyAppConfigFile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+			Target DeployOutputFiles:
+			Task "Copy"
+				Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "Copy"
+			Task "Copy"
+				Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "Copy"
+			Done building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareForRun" depends on it.
+		Done building target "PrepareForRun" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_RecordCleanFile" depends on it.
+			Target _GetCompileOutputsForClean:
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Task "CreateItem"
+				Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "CreateItem"
+			Done building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_RecordCleanFile" depends on it.
+			Target _RecordCleanFile:
+			Task "ReadLinesFromFile"
+				Using task ReadLinesFromFile from Microsoft.Build.Tasks.ReadLinesFromFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "ReadLinesFromFile"
+			Task "FindUnderPath"
+				Using task FindUnderPath from Microsoft.Build.Tasks.FindUnderPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "FindUnderPath"
+			Task "RemoveDuplicates"
+				Using task RemoveDuplicates from Microsoft.Build.Tasks.RemoveDuplicates, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "RemoveDuplicates"
+			Task "WriteLinesToFile"
+				Using task WriteLinesToFile from Microsoft.Build.Tasks.WriteLinesToFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+			Done executing task "WriteLinesToFile"
+			Done building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+		Done building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Building target "PostBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Target PostBuildEvent skipped due to false condition: '$(PostBuildEvent)' != '' and
+					('$(RunPostBuildEvent)' != 'OnOutputUpdated' or
+					  '$(_AssemblyModifiedTimeBeforeCompile)' != '$(_AssemblyModifiedTimeAfterCompile)')
+		Done building target "PostBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+		Done building target "CoreBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Building target "AfterBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Done building target "AfterBuild" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+		Done building target "Build" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Done building project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+	Done executing task "MSBuild"
+	Done building target "ResolveProjectReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "ResolveProjectReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "_AddCorlibReference" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "ResolveAssemblyReferences" depends on it.
+Done building target "_AddCorlibReference" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "ResolveAssemblyReferences" depends on it.
+	Target ResolveAssemblyReferences:
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Task "ResolveAssemblyReference"
+		Using task ResolveAssemblyReference from Microsoft.Build.Tasks.ResolveAssemblyReference, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		TargetFrameworkDirectories:
+			/usr/lib/mono/4.5
+			/usr/lib/mono/4.5/Facades/
+		SearchPaths:
+			{CandidateAssemblyFiles}
+			{HintPathFromItem}
+			{TargetFrameworkDirectory}
+			{PkgConfig}
+			{GAC}
+			{RawFileName}
+			bin/Debug/
+		Primary Reference System
+			Reference System resolved to /usr/lib/mono/4.5/System.dll. CopyLocal = False
+			Reference found at search path {TargetFrameworkDirectory}
+		For searchpath {CandidateAssemblyFiles}
+		Warning: {CandidateAssemblyFiles} not supported currently
+		For searchpath {HintPathFromItem}
+		HintPath attribute not found
+		For searchpath {TargetFrameworkDirectory}
+		Primary Reference Microsoft.CSharp
+			Reference Microsoft.CSharp resolved to /usr/lib/mono/4.5/Microsoft.CSharp.dll. CopyLocal = False
+			Reference found at search path {TargetFrameworkDirectory}
+		For searchpath {CandidateAssemblyFiles}
+		Warning: {CandidateAssemblyFiles} not supported currently
+		For searchpath {HintPathFromItem}
+		HintPath attribute not found
+		For searchpath {TargetFrameworkDirectory}
+		Primary Reference System.Core
+			Reference System.Core resolved to /usr/lib/mono/4.5/System.Core.dll. CopyLocal = False
+			Reference found at search path {TargetFrameworkDirectory}
+		For searchpath {CandidateAssemblyFiles}
+		Warning: {CandidateAssemblyFiles} not supported currently
+		For searchpath {HintPathFromItem}
+		HintPath attribute not found
+		For searchpath {TargetFrameworkDirectory}
+		Primary Reference from AssemblyFiles /home/utterstep/prog/csharp/project-euler/Tools/bin/Debug//Tools.dll
+		Primary Reference from AssemblyFiles /usr/lib/mono/4.5/mscorlib.dll
+		Dependency System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+			Required by Tools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+			Reference System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 resolved to /usr/lib/mono/4.5/System.Numerics.dll.
+			Reference found at search path {TargetFrameworkDirectory}
+		For searchpath /home/utterstep/prog/csharp/project-euler/Tools/bin/Debug
+		Considered '/home/utterstep/prog/csharp/project-euler/Tools/bin/Debug/System.Numerics' as a file, but the file does not exist
+		Considered '/home/utterstep/prog/csharp/project-euler/Tools/bin/Debug/System.Numerics.exe' as a file, but the file does not exist
+		Considered '/home/utterstep/prog/csharp/project-euler/Tools/bin/Debug/System.Numerics.dll' as a file, but the file does not exist
+		For searchpath {CandidateAssemblyFiles}
+		Warning: {CandidateAssemblyFiles} not supported currently
+		For searchpath {HintPathFromItem}
+		HintPath attribute not found
+		For searchpath {TargetFrameworkDirectory}
+			This is CopyLocal false as it is in the GAC,target framework directory or provided by a package.
+	Done executing task "ResolveAssemblyReference"
+	Done building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "ResolveAssemblyReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "AfterResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Done building target "AfterResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Building target "ImplicitlyExpandDesignTimeFacades" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Done building target "ImplicitlyExpandDesignTimeFacades" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "ResolveReferences" depends on it.
+Done building target "ResolveReferences" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+	Target CopyFilesMarkedCopyLocal:
+	Task "Copy"
+		Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "Copy"
+	Done building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "CopyFilesMarkedCopyLocal" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "PrepareResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+	Target AssignTargetPaths:
+	Task "AssignTargetPath"
+		Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "AssignTargetPath"
+	Task "AssignTargetPath"
+		Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "AssignTargetPath"
+	Task "AssignTargetPath"
+		Using task AssignTargetPath from Microsoft.Build.Tasks.AssignTargetPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "AssignTargetPath"
+	Done building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "AssignTargetPaths" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+	Target SplitResourcesByCulture:
+	Task "AssignCulture"
+		Using task AssignCulture from Microsoft.Build.Tasks.AssignCulture, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "AssignCulture"
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Done building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "SplitResourcesByCulture" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Building target "CreateManifestResourceNames" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "PrepareResources" depends on it.
+Done building target "CreateManifestResourceNames" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "PrepareResources" depends on it.
+Building target "CopyNonResxEmbeddedResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Target CopyNonResxEmbeddedResources skipped due to false condition: '@(NonResxWithCulture)' != '' or '@(NonResxWithNoCulture)' != '' or '@(ManifestNonResxWithCulture)' != '' or '@(ManifestNonResxWithNoCulture)' != ''
+Done building target "CopyNonResxEmbeddedResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Building target "GenerateResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Done building target "GenerateResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+	Target GenerateSatelliteAssemblies:
+	No input files were specified for target GenerateSatelliteAssemblies, skipping.
+	Done building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "GenerateSatelliteAssemblies" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Building target "CompileLicxFiles" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Target CompileLicxFiles skipped due to false condition: '@(LicxFiles)' != ''
+Done building target "CompileLicxFiles" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareResources" depends on it.
+Done building target "PrepareResources" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "Compile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+	Target GenerateTargetFrameworkMonikerAttribute:
+	Skipping target "GenerateTargetFrameworkMonikerAttribute" because its outputs are up-to-date.
+	Done building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "GenerateTargetFrameworkMonikerAttribute" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Building target "BeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Done building target "BeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Building target "_TimestampBeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Target _TimestampBeforeCompile skipped due to false condition: '$(RunPostBuildEvent)' == 'OnOutputUpdated'
+Done building target "_TimestampBeforeCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "Compile" depends on it.
+	Target CoreCompile:
+	Skipping target "CoreCompile" because its outputs are up-to-date.
+	Done building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "CoreCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.CSharp.targets"); "Compile" depends on it.
+Building target "_TimestampAfterCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Target _TimestampAfterCompile skipped due to false condition: '$(RunPostBuildEvent)' == 'OnOutputUpdated'
+Done building target "_TimestampAfterCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Building target "AfterCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Done building target "AfterCompile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Compile" depends on it.
+Done building target "Compile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "PrepareForRun" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareForRun" depends on it.
+Building target "_CopyDeployFilesToOutputDirectory" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+Building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+	Target GetCopyToOutputDirectoryItems:
+	Task "MSBuild"
+		Using task MSBuild from Microsoft.Build.Tasks.MSBuild, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Global Properties:
+		Project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" (GetCopyToOutputDirectoryItems target(s)):
+		Initial Properties:
+		Project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" (GetCopyToOutputDirectoryItems target(s)):
+		Initial Properties:
+		_ = /usr/bin/xbuild
+		AppDesignerFolder = Properties
+		AssemblyName = Tools
+		CLUTTER_IM_MODULE = xim
+		COLORTERM = gnome-terminal
+		COMPIZ_BIN_PATH = /usr/bin/
+		COMPIZ_CONFIG_PROFILE = ubuntu
+		Configuration = Debug
+		DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-8pmziBy2XW
+		DebugSymbols = true
+		DebugType = full
+		DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+		DefineConstants = DEBUG;TRACE
+		DESKTOP_SESSION = ubuntu
+		DISPLAY = :0
+		ErrorReport = prompt
+		FileAlignment = 512
+		GDM_LANG = ru
+		GDMSESSION = ubuntu
+		GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+		GNOME_KEYRING_CONTROL = /run/user/1000/keyring-KQAHKW
+		GNOME_KEYRING_PID = 21995
+		GPG_AGENT_INFO = /run/user/1000/keyring-KQAHKW/gpg:0:1
+		GTK_IM_MODULE = xim
+		GTK_MODULES = overlay-scrollbar:unity-gtk-module
+		HOME = /home/utterstep
+		IM_CONFIG_PHASE = 1
+		INSTANCE = 
+		JOB = unity-settings-daemon
+		LANG = ru_RU.UTF-8
+		LANGUAGE = ru
+		LESSCLOSE = /usr/bin/lesspipe %s %s
+		LESSOPEN = | /usr/bin/lesspipe %s
+		LOGNAME = utterstep
+		LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+		MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+		MSBuildBinPath = /usr/lib/mono/4.5
+		MSBuildExtensionsPath = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath32 = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath64 = /usr/lib/mono/xbuild
+		MSBuildProjectDefaultTargets = Build
+		MSBuildProjectDirectory = /home/utterstep/prog/csharp/project-euler/Tools
+		MSBuildProjectExtension = .csproj
+		MSBuildProjectFile = Tools.csproj
+		MSBuildProjectFullPath = /home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj
+		MSBuildProjectName = Tools
+		MSBuildThisFile = Tools.csproj
+		MSBuildThisFileDirectory = /home/utterstep/prog/csharp/project-euler/Tools/
+		MSBuildThisFileDirectoryNoRoot = home/utterstep/prog/csharp/project-euler/Tools/
+		MSBuildThisFileExtension = .csproj
+		MSBuildThisFileFullPath = /home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj
+		MSBuildThisFileName = Tools
+		MSBuildToolsPath = /usr/lib/mono/4.5
+		MSBuildToolsRoot = /usr/lib/mono
+		MSBuildToolsVersion = 4.0
+		OLDPWD = /tmp
+		Optimize = false
+		OS = Unix
+		OutputPath = bin\Debug\
+		OutputType = Library
+		PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+		Platform = AnyCPU
+		ProjectGuid = {B7EC082C-690F-4DAA-92D0-8486893D8933}
+		PWD = /home/utterstep/prog/csharp/project-euler/086
+		QT_IM_MODULE = ibus
+		QT_QPA_PLATFORMTHEME = appmenu-qt5
+		QT4_IM_MODULE = xim
+		RootNamespace = Tools
+		SESSION = ubuntu
+		SESSIONTYPE = gnome-session
+		SHELL = /bin/bash
+		SHLVL = 1
+		SSH_AUTH_SOCK = /run/user/1000/keyring-KQAHKW/ssh
+		TargetFrameworkVersion = v4.5
+		TERM = xterm
+		TEXTDOMAIN = im-config
+		TEXTDOMAINDIR = /usr/share/locale/
+		UPSTART_EVENTS = xsession started
+		UPSTART_INSTANCE = 
+		UPSTART_JOB = unity7
+		UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/21997
+		USER = utterstep
+		VTE_VERSION = 3603
+		WarningLevel = 4
+		WINDOWID = 73400331
+		XAUTHORITY = /home/utterstep/.Xauthority
+		XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+		XDG_CURRENT_DESKTOP = Unity
+		XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+		XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/utterstep
+		XDG_RUNTIME_DIR = /run/user/1000
+		XDG_SEAT = seat0
+		XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+		XDG_SESSION_DESKTOP = ubuntu
+		XDG_SESSION_ID = c4
+		XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+		XDG_SESSION_TYPE = x11
+		XDG_VTNR = 7
+		XMODIFIERS = @im=ibus
+		Initial Items:
+		/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj: Importing project /usr/lib/mono/4.5/Microsoft.CSharp.targets 
+		/usr/lib/mono/4.5/Microsoft.CSharp.targets: Importing project /usr/lib/mono/4.5/Microsoft.Common.targets 
+		_ = /usr/bin/xbuild
+		_OriginalConfiguration = $(Configuration)
+		_OriginalPlatform = $(Platform)
+		AddAdditionalExplicitAssemblyReferences = true
+		AdditionalExplicitAssemblyReferences = System.Core;$(AdditionalExplicitAssemblyReferences)
+		AllowedReferenceAssemblyFileExtensions = 
+					.exe;
+					.dll
+				
+		AllowedReferenceRelatedFileExtensions = 
+					.exe.mdb;
+					.dll.mdb;
+					.xml
+				
+		AppDesignerFolder = Properties
+		AssemblyName = Tools
+		AssemblySearchPaths = 
+					{CandidateAssemblyFiles};
+					$(ReferencePath);
+					@(AdditionalReferencePath);
+					{HintPathFromItem};
+					{TargetFrameworkDirectory};
+					{PkgConfig};
+					{GAC};
+					{RawFileName};
+					$(OutDir)
+				
+		BaseIntermediateOutputPath = obj\
+		BuildDependsOn = 
+					BuildOnlySettings;
+					BeforeBuild;
+					CoreBuild;
+					AfterBuild
+				
+		CleanDependsOn = 
+					BeforeClean;
+					CleanReferencedProjects;
+					CoreClean;
+					AfterClean
+				
+		CleanFile = $(MSBuildProjectFile).FilesWrittenAbsolute.txt
+		CLUTTER_IM_MODULE = xim
+		COLORTERM = gnome-terminal
+		CompileDependsOn = 
+					ResolveReferences;
+					GenerateTargetFrameworkMonikerAttribute;
+					BeforeCompile;
+					_TimestampBeforeCompile;
+					CoreCompile;
+					_TimestampAfterCompile;
+					AfterCompile
+				
+		CompileLicxFilesDependsOn = 
+		COMPIZ_BIN_PATH = /usr/bin/
+		COMPIZ_CONFIG_PROFILE = ubuntu
+		Configuration = Debug
+		ConfigurationName = $(Configuration)
+		CoreBuildDependsOn = 
+					PrepareForBuild;
+					GetFrameworkPaths;
+					GetReferenceAssemblyPaths;
+					PreBuildEvent;
+					ResolveReferences;
+					CopyFilesMarkedCopyLocal;
+					PrepareResources;
+					Compile;
+					PrepareForRun;
+					DeployOutputFiles;
+					_RecordCleanFile;
+					PostBuildEvent
+				
+		CoreCompileDependsOn = 
+		CreateManifestResourceNamesDependsOn = 
+		DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-8pmziBy2XW
+		DebugSymbols = true
+		DebugType = full
+		DefaultLanguageSourceExtension = .cs
+		DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+		DefineConstants = DEBUG;TRACE
+		DESKTOP_SESSION = ubuntu
+		DISPLAY = :0
+		ErrorReport = prompt
+		FileAlignment = 512
+		GDM_LANG = ru
+		GDMSESSION = ubuntu
+		GenerateTargetFrameworkAttribute = true
+		GetFrameworkPathsDependsOn = 
+		GetReferenceAssemblyPathsDependsOn = 
+		GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+		GNOME_KEYRING_CONTROL = /run/user/1000/keyring-KQAHKW
+		GNOME_KEYRING_PID = 21995
+		GPG_AGENT_INFO = /run/user/1000/keyring-KQAHKW/gpg:0:1
+		GTK_IM_MODULE = xim
+		GTK_MODULES = overlay-scrollbar:unity-gtk-module
+		HOME = /home/utterstep
+		IM_CONFIG_PHASE = 1
+		ImplicitlyExpandDesignTimeFacades = true
+		ImplicitlyExpandDesignTimeFacadesDependsOn = 
+					$(ImplicitlyExpandDesignTimeFacadesDependsOn);
+					GetReferenceAssemblyPaths
+				
+		ImportByWildcardAfterMicrosoftCommonTargets = true
+		ImportByWildcardBeforeMicrosoftCommonTargets = true
+		INSTANCE = 
+		IntermediateOutputPath = $(BaseIntermediateOutputPath)$(Configuration)\
+		JOB = unity-settings-daemon
+		LANG = ru_RU.UTF-8
+		Language = C#
+		LESSCLOSE = /usr/bin/lesspipe %s %s
+		LESSOPEN = | /usr/bin/lesspipe %s
+		LOGNAME = utterstep
+		LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+		MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+		MSBuildAllProjects = $(MSBuildAllProjects);$(MSBuildProjectFullPath);$(MSBuildToolsPath)\Microsoft.Common.targets
+		MSBuildBinPath = /usr/lib/mono/4.5
+		MSBuildExtensionsPath = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath32 = /usr/lib/mono/xbuild
+		MSBuildExtensionsPath64 = /usr/lib/mono/xbuild
+		MSBuildProjectDefaultTargets = Build
+		MSBuildProjectDirectory = /home/utterstep/prog/csharp/project-euler/Tools
+		MSBuildProjectExtension = .csproj
+		MSBuildProjectFile = Tools.csproj
+		MSBuildProjectFullPath = /home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj
+		MSBuildProjectName = Tools
+		MSBuildThisFile = Microsoft.Common.targets
+		MSBuildThisFileDirectory = /usr/lib/mono/4.5/
+		MSBuildThisFileDirectoryNoRoot = usr/lib/mono/4.5/
+		MSBuildThisFileExtension = .targets
+		MSBuildThisFileFullPath = /usr/lib/mono/4.5/Microsoft.Common.targets
+		MSBuildThisFileName = Microsoft.Common
+		MSBuildToolsPath = /usr/lib/mono/4.5
+		MSBuildToolsRoot = /usr/lib/mono
+		MSBuildToolsVersion = 4.0
+		NoCompilerStandardLib = true
+		OLDPWD = /tmp
+		Optimize = false
+		OS = Unix
+		OutDir = $(OutputPath)
+		OutputPath = bin\Debug\
+		OutputType = Library
+		PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+		Platform = AnyCPU
+		PlatformName = $(Platform)
+		PostBuildEventDependsOn = 
+		PreBuildEventDependsOn = 
+		PrepareForRunDependsOn = 
+					DeployOutputFiles
+				
+		PrepareResourcesDependsOn = 
+					AssignTargetPaths;
+					SplitResourcesByCulture;
+					CreateManifestResourceNames;
+					CopyNonResxEmbeddedResources;
+					GenerateResources;
+					GenerateSatelliteAssemblies;
+					CompileLicxFiles
+				
+		ProjectDir = $(MSBuildProjectDirectory)\
+		ProjectGuid = {B7EC082C-690F-4DAA-92D0-8486893D8933}
+		PWD = /home/utterstep/prog/csharp/project-euler/086
+		QT_IM_MODULE = ibus
+		QT_QPA_PLATFORMTHEME = appmenu-qt5
+		QT4_IM_MODULE = xim
+		RebuildDependsOn = 
+					BeforeRebuild;
+					Clean;
+					$(MSBuildProjectDefaultTargets);
+					AfterRebuild;
+				
+		ResolveAssemblyReferencesDependsOn = $(ResolveAssemblyReferencesDependsOn);_AddCorlibReference
+		ResolveReferencesDependsOn = 
+					$(ResolveReferencesDependsOn);
+					ImplicitlyExpandDesignTimeFacades
+				
+		RootNamespace = Tools
+		SESSION = ubuntu
+		SESSIONTYPE = gnome-session
+		SHELL = /bin/bash
+		SHLVL = 1
+		SkipCopyUnchangedFiles = true
+		SSH_AUTH_SOCK = /run/user/1000/keyring-KQAHKW/ssh
+		TargetDir = @(_OutDirItem->'%(FullPath)')
+		TargetExt = .dll
+		TargetFileName = $(TargetName)$(TargetExt)
+		TargetFrameworkIdentifier = .NETFramework
+		TargetFrameworkMoniker = $(TargetFrameworkIdentifier),Version=$(TargetFrameworkVersion)
+		TargetFrameworkMonikerAssemblyAttributesPath = $(IntermediateOutputPath)$(TargetFrameworkMoniker).AssemblyAttribute$(DefaultLanguageSourceExtension)
+		TargetFrameworkMonikerAssemblyAttributeText = 
+		// <autogenerated />
+		[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute("$(TargetFrameworkMoniker)", FrameworkDisplayName = "$(TargetFrameworkMonikerDisplayName)")]
+				
+		TargetFrameworkVersion = v4.5
+		TargetName = $(AssemblyName)
+		TargetPath = @(_OutDirItem->'%(FullPath)\$(TargetFileName)')
+		TERM = xterm
+		TEXTDOMAIN = im-config
+		TEXTDOMAINDIR = /usr/share/locale/
+		UPSTART_EVENTS = xsession started
+		UPSTART_INSTANCE = 
+		UPSTART_JOB = unity7
+		UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/21997
+		USER = utterstep
+		VisualStudioVersion = 11.0
+		VTE_VERSION = 3603
+		WarningLevel = 4
+		WINDOWID = 73400331
+		XAUTHORITY = /home/utterstep/.Xauthority
+		XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+		XDG_CURRENT_DESKTOP = Unity
+		XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+		XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/utterstep
+		XDG_RUNTIME_DIR = /run/user/1000
+		XDG_SEAT = seat0
+		XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+		XDG_SESSION_DESKTOP = ubuntu
+		XDG_SESSION_ID = c4
+		XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+		XDG_SESSION_TYPE = x11
+		XDG_VTNR = 7
+		XMODIFIERS = @im=ibus
+		Initial Items:
+		_OutDirItem
+			bin/Debug/
+		Compile
+			Cycle.cs
+			Decorators.cs
+			Extensions.cs
+			Fraction.cs
+			LongInteger.cs
+			Matrix.cs
+			NumberAsFactorization.cs
+			NumUtils.cs
+			Permutations.cs
+			Properties/AssemblyInfo.cs
+		FileWrites
+			obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+		IntermediateAssembly
+			obj/Debug/Tools.dll
+		Reference
+			System
+			System.Core
+			System.Numerics
+			System.Xml.Linq
+			System.Data.DataSetExtensions
+			Microsoft.CSharp
+			System.Data
+			System.Xml
+		Building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Target GetCopyToOutputDirectoryItems skipped, as it has already been built.
+		Done building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+		Done building project "/home/utterstep/prog/csharp/project-euler/Tools/Tools.csproj".
+	Done executing task "MSBuild"
+	Done building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "GetCopyToOutputDirectoryItems" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+Building target "_CopyDeployFilesToOutputDirectoryAlways" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+Target _CopyDeployFilesToOutputDirectoryAlways skipped due to false condition: '@(ItemsToCopyToOutputDirectoryAlways)' != ''
+Done building target "_CopyDeployFilesToOutputDirectoryAlways" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+Building target "_CopyDeployFilesToOutputDirectoryPreserveNewest" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+Target _CopyDeployFilesToOutputDirectoryPreserveNewest skipped due to false condition: '@(ItemsToCopyToOutputDirectoryPreserveNewest)' != ''
+Done building target "_CopyDeployFilesToOutputDirectoryPreserveNewest" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_CopyDeployFilesToOutputDirectory" depends on it.
+Done building target "_CopyDeployFilesToOutputDirectory" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+Building target "_CopyAppConfigFile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+Target _CopyAppConfigFile skipped due to false condition: '@(AppConfigWithTargetPath)' != ''
+Done building target "_CopyAppConfigFile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "DeployOutputFiles" depends on it.
+	Target DeployOutputFiles:
+	Task "Copy"
+		Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "Copy"
+	Task "Copy"
+		Using task Copy from Microsoft.Build.Tasks.Copy, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "Copy"
+	Done building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "DeployOutputFiles" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "PrepareForRun" depends on it.
+Done building target "PrepareForRun" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_RecordCleanFile" depends on it.
+	Target _GetCompileOutputsForClean:
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Task "CreateItem"
+		Using task CreateItem from Microsoft.Build.Tasks.CreateItem, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "CreateItem"
+	Done building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "_GetCompileOutputsForClean" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "_RecordCleanFile" depends on it.
+	Target _RecordCleanFile:
+	Task "ReadLinesFromFile"
+		Using task ReadLinesFromFile from Microsoft.Build.Tasks.ReadLinesFromFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "ReadLinesFromFile"
+	Task "FindUnderPath"
+		Using task FindUnderPath from Microsoft.Build.Tasks.FindUnderPath, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "FindUnderPath"
+	Task "RemoveDuplicates"
+		Using task RemoveDuplicates from Microsoft.Build.Tasks.RemoveDuplicates, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "RemoveDuplicates"
+	Task "WriteLinesToFile"
+		Using task WriteLinesToFile from Microsoft.Build.Tasks.WriteLinesToFile, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Done executing task "WriteLinesToFile"
+	Done building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+Done building target "_RecordCleanFile" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Building target "PostBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Target PostBuildEvent skipped due to false condition: '$(PostBuildEvent)' != '' and
+			('$(RunPostBuildEvent)' != 'OnOutputUpdated' or
+			  '$(_AssemblyModifiedTimeBeforeCompile)' != '$(_AssemblyModifiedTimeAfterCompile)')
+Done building target "PostBuildEvent" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "CoreBuild" depends on it.
+Done building target "CoreBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Building target "AfterBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Done building target "AfterBuild" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets"); "Build" depends on it.
+Done building target "Build" in project "/home/utterstep/prog/csharp/project-euler/086/086.csproj" ("/usr/lib/mono/4.5/Microsoft.Common.targets").
+Done building project "/home/utterstep/prog/csharp/project-euler/086/086.csproj".
+
+Target perfomance summary:
+     0,185 ms  GenerateResources                                       2 calls
+     0,233 ms  CreateManifestResourceNames                             2 calls
+     0,309 ms  SplitProjectReferencesByExistent                        2 calls
+     0,475 ms  GenerateTargetFrameworkMonikerAttribute                 2 calls
+     0,594 ms  CoreCompile                                             2 calls
+     0,652 ms  _AddCorlibReference                                     2 calls
+     0,834 ms  GenerateSatelliteAssemblies                             2 calls
+     0,877 ms  AssignTargetPaths                                       2 calls
+     1,189 ms  CopyFilesMarkedCopyLocal                                2 calls
+     1,240 ms  SplitResourcesByCulture                                 2 calls
+     1,301 ms  AssignProjectConfiguration                              1 calls
+     1,327 ms  _GetCompileOutputsForClean                              2 calls
+     1,601 ms  DeployOutputFiles                                       2 calls
+     2,458 ms  ImplicitlyExpandDesignTimeFacades                       2 calls
+     2,833 ms  _ValidateEssentialProperties                            2 calls
+     3,204 ms  GetFrameworkPaths                                       2 calls
+     3,822 ms  _RecordCleanFile                                        2 calls
+     8,783 ms  GetCopyToOutputDirectoryItems                           2 calls
+    12,868 ms  PrepareForBuild                                         2 calls
+    21,262 ms  GetReferenceAssemblyPaths                               2 calls
+    35,188 ms  ResolveAssemblyReferences                               2 calls
+    58,929 ms  ResolveProjectReferences                                2 calls
+
+Tasks perfomance summary:
+     0,551 ms  AssignCulture                                           2 calls
+     0,619 ms  FindUnderPath                                           2 calls
+     0,732 ms  AssignTargetPath                                        6 calls
+     0,763 ms  RemoveDuplicates                                        2 calls
+     0,941 ms  ReadLinesFromFile                                       2 calls
+     1,283 ms  WriteLinesToFile                                        2 calls
+     1,422 ms  MakeDir                                                 2 calls
+     1,540 ms  GetFrameworkPath                                        2 calls
+     1,624 ms  CreateProperty                                          4 calls
+     2,343 ms  Copy                                                    6 calls
+     2,542 ms  FindAppConfigFile                                       2 calls
+     3,351 ms  CreateItem                                             14 calls
+     8,077 ms  Message                                                 2 calls
+    12,166 ms  GetReferenceAssemblyPaths                               2 calls
+    34,293 ms  ResolveAssemblyReference                                2 calls
+    66,561 ms  MSBuild                                                 2 calls
+
+Build succeeded.
+	 0 Warning(s)
+	 0 Error(s)
+
+Time Elapsed 00:00:00.1968410

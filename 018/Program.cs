@@ -1,11 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using System.IO;
-using System.Diagnostics;
 using Tools;
 
 namespace _018
@@ -58,8 +54,8 @@ namespace _018
 
         static void Main(string[] args)
         {
-            var mountain18 = MountainFromFile("mountain18.txt");
-            var mountain67 = MountainFromFile("mountain67.txt");
+            var mountain18 = MountainFromFile("../../mountain18.txt");
+            var mountain67 = MountainFromFile("../../mountain67.txt");
 
             Decorators.Benchmark(ComputeGoldenPath, mountain18);
             Decorators.Benchmark(ComputeGoldenPath, mountain67);

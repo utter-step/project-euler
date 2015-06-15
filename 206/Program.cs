@@ -1,5 +1,4 @@
 using System;
-using System.Text.RegularExpressions;
 
 using Tools;
 
@@ -13,7 +12,7 @@ namespace _206
             Decorators.Benchmark(Solve);
         }
 
-        public static int Solve() 
+        public static int Solve()
         {
             long minSquare = 1020304050607080900;
             long maxSquare = 1929394959697989900;
@@ -26,7 +25,7 @@ namespace _206
                 min += 10;
             }
 
-            for (long i = min; i <= max; ) 
+            for (long i = min; i <= max; )
             {
                 if (CheckNumeric(i * i))
                 {

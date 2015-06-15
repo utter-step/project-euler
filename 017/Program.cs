@@ -1,11 +1,11 @@
-using System;
+using Tools;
 
 namespace _017
 {
     class Program
     {
         #region Length constants
-        private static readonly int[] first20 = new int[] {
+        private static readonly int[] first20 = {
             "".Length,
             "one".Length,
             "two".Length,
@@ -28,7 +28,7 @@ namespace _017
             "nineteen".Length
         };
 
-        private static readonly int[] dozens = new int[] {
+        private static readonly int[] dozens = {
             "".Length,
             "".Length,
             "twenty".Length,
@@ -43,14 +43,12 @@ namespace _017
 
         private const int HUNDRED = 7;
         private const int AND = 3;
-        private const int ONE_THOUSAND = 11; 
+        private const int ONE_THOUSAND = 11;
         #endregion
 
         static void Main(string[] args)
         {
-            Tools.Decorators.TimeIt(NumberLetterCountBefore1000);
-
-            Tools.Decorators.TimeItAccurate(NumberLetterCountBefore1000, 1000);
+            Decorators.Benchmark(NumberLetterCountBefore1000);
         }
 
         private static int NumberLetterCountBefore1000()

@@ -60,7 +60,7 @@ namespace _064
             {
                 var other = obj as ChainParams;
 
-                if (other == null) 
+                if (other == null)
                 {
                     return false;
                 }
@@ -84,9 +84,9 @@ namespace _064
             public RootCycle(int n)
                 : base(
                     new ChainParams(
-                        (int)Math.Sqrt(n), 
-                        1, 
-                        (int)Math.Sqrt(n)), 
+                        (int)Math.Sqrt(n),
+                        1,
+                        (int)Math.Sqrt(n)),
                     false)
             {
                 _n = n;
