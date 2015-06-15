@@ -10,7 +10,7 @@ namespace _417
 {
     class Program
     {
-        private static readonly ConcurrentDictionary<int, int> _cache = new ConcurrentDictionary<int, int>(); 
+        private static readonly ConcurrentDictionary<int, int> _cache = new ConcurrentDictionary<int, int>();
 
         private static int PeriodLength_CurrentRealisation(int denom)
         {
@@ -113,7 +113,7 @@ namespace _417
             var cm = CudafyTranslator.Cudafy();
             var gpu = CudafyHost.GetDevice(CudafyModes.Target, CudafyModes.DeviceId);
             gpu.LoadModule(cm);
-            
+
             int res;
             var resArr = gpu.Allocate<int>();
 

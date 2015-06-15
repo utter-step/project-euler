@@ -7,7 +7,7 @@ namespace _013
     class Program
     {
         #region Values
-        private static string[] numbers = @"37107287533902102798797998220837590246510135740250
+        private static readonly string[] numbers = @"37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
 91942213363574161572522430563301811072406154908250
@@ -106,7 +106,7 @@ namespace _013
 77158542502016545090413245809786882778948721859617
 72107838435069186155435662884062257473692284509516
 20849603980134001723930671666823555245252804609722
-53503534226472524250874054075591789781264330331690".Split(new[] { "\r\n" }, StringSplitOptions.None);
+53503534226472524250874054075591789781264330331690".Split('\n');
         #endregion
 
         private static long FirstNDigitsOfSum(string[] numbers, int nOfDigits = 10)
@@ -130,9 +130,7 @@ namespace _013
 
         static void Main(string[] args)
         {
-            Decorators.TimeIt(First10DigitsOfSum, numbers);
-
-            Decorators.TimeItAccurate(First10DigitsOfSum, numbers, 100);
+            Decorators.Benchmark(First10DigitsOfSum, numbers);
         }
     }
 }

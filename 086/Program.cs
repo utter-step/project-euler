@@ -14,7 +14,7 @@ namespace _086
 
         public static int Solve(int solutions)
         {
-            int M = 100;
+            const int M = 100;
             int count = 2060;
 
             if (solutions < count)

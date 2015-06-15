@@ -1,6 +1,6 @@
 using Tools;
 
-namespace _1
+namespace _001
 {
     class Program
     {
@@ -21,10 +21,10 @@ namespace _1
             int countOf5s  = (limit - 1) / 5;
             int countOf15s = (limit - 1) / 15;
 
-            int res = ((countOf3s * (countOf3s + 1)) / 2) * 3 + 
-                ((countOf5s * (countOf5s + 1)) / 2) * 5 - 
+            int res = ((countOf3s * (countOf3s + 1)) / 2) * 3 +
+                ((countOf5s * (countOf5s + 1)) / 2) * 5 -
                 ((countOf15s * (countOf15s + 1)) / 2) * 15;
-            
+
             return res;
         }
     }

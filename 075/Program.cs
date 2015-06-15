@@ -42,7 +42,7 @@ namespace _075
                         {
                             perimeterCounts[kPerimeter - 1]++;
                             kPerimeter += perimeter;
-                        } 
+                        }
                     }
                 }
             }
@@ -52,7 +52,7 @@ namespace _075
         private static int Solve(int upperLimit)
         {
             var perimeterCounts = new int[upperLimit];
-            
+
             foreach (Tuple<int, int> coprime in GenerateCoprimes(2, 1, upperLimit))
             {
                 int m = coprime.Item1, n = coprime.Item2;

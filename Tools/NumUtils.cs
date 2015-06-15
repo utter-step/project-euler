@@ -260,6 +260,13 @@ namespace Tools
                 return new HashSet<int>();
             }
 
+            if (upperLimit <= _primesLimit)
+            {
+                var primes = new HashSet<int>(_primes);
+                primes.RemoveWhere(x => x >= upperLimit || x < lowerLimit);
+                return primes;
+            }
+
             upperLimit++;
 
             var primeList = new bool[upperLimit];
@@ -323,6 +330,31 @@ namespace Tools
             }
 
             return true;
+        }
+
+        public static int SumOfDigits(long n)
+        {
+            long s = 0;
+
+            while (n > 0)
+            {
+                s += n % 10;
+                n /= 10;
+            }
+
+            return (int)s;
+        }
+
+        public static int SumOfDigits(int n)
+        {
+            int s = 0;
+            while (n > 0)
+            {
+                s += n % 10;
+                n /= 10;
+            }
+
+            return s;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

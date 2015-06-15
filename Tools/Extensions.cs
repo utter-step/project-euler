@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace Tools
 {
     public static class Methods
@@ -36,6 +38,21 @@ namespace Tools
             T temp = a;
             a = b;
             b = temp;
+        }
+
+        public static IEnumerable<int[]> GetPermutations(this int[] array)
+        {
+            return Permutations.ProducePermutations(array);
+        }
+
+        public static int SumOfDigits(this int n)
+        {
+            return NumUtils.SumOfDigits(n);
+        }
+
+        public static int SumOfDigits(this long n)
+        {
+            return NumUtils.SumOfDigits(n);
         }
 
         public static int Factorial(int n)

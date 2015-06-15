@@ -1,7 +1,8 @@
 using System;
 using System.Linq;
-using System.Text;
 using System.IO;
+
+using Tools;
 
 namespace _022
 {
@@ -9,24 +10,18 @@ namespace _022
     {
         static void Main(string[] args)
         {
-            var s = new System.Diagnostics.Stopwatch();
-
-            s.Start();
-            int res = ScoreNames("names.txt");
-            s.Stop();
-
-            Console.WriteLine("{0} - {1} ms", res, s.ElapsedMilliseconds);
-        }
-
-        private static int ScoreNames(string fileName)
-        {
             string[] names;
-            using (var file = new StreamReader(fileName))
+            using (var file = new StreamReader("../../names.txt"))
             {
                 names = (from name in file.ReadToEnd().Split(',')
-                         select name.Trim('"')).ToArray();
+                    select name.Trim('"')).ToArray();
             }
 
+            Decorators.Benchmark(ScoreNames, names);
+        }
+
+        private static int ScoreNames(string[] names)
+        {
             Array.Sort(names);
 
             int res = 0;

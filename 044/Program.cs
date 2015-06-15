@@ -43,7 +43,7 @@ namespace _044
                             }
                         }
                     }
-                } 
+                }
             }
 
             return -1;
@@ -58,7 +58,7 @@ namespace _044
             }
 
             return result;
-        } 
+        }
 
         private static bool IsPentagonal(long x)
         {

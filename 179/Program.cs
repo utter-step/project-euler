@@ -67,10 +67,10 @@ namespace _179
 
             //                filler += curCount;
             //                curnum *= prime;
-            //            } 
+            //            }
             //        }
             //    }
-            //} 
+            //}
             #endregion
 
             #region Old
@@ -94,7 +94,7 @@ namespace _179
 
                     filler += count;
                 }
-            } 
+            }
             #endregion
 
             return countOfDivisors.Skip(1);

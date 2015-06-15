@@ -66,7 +66,7 @@ namespace _066
 
             public Fraction(LongInteger numerator, LongInteger denominator)
                 : this()
-            { 
+            {
                 Numerator = numerator;
                 Denominator = denominator;
 
@@ -162,9 +162,9 @@ namespace _066
 
         private class ChainParams
         {
-            public int Multiplier;
-            public int Subtracted;
-            public int IntegerPart;
+            public readonly int Multiplier;
+            public readonly int Subtracted;
+            public readonly int IntegerPart;
 
             public ChainParams(int integerPart, int multiplier, int subtracted)
             {

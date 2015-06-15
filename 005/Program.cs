@@ -1,12 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
-namespace _5
+namespace _005
 {
     class Program
     {
@@ -43,12 +40,7 @@ namespace _5
 
         static void Main(string[] args)
         {
-            Decorators.TimeIt(Solve, 20);
-
-            Console.WriteLine();
-            Console.WriteLine();
-
-            Decorators.TimeItAccurate(Solve, 20, 100000);
+            Decorators.Benchmark(Solve, 200);
         }
     }
 }

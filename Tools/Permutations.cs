@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Tools
 {
@@ -45,33 +46,33 @@ namespace Tools
             return res;
         }
 
-        public static int[][] ProducePermutations(int length)
+        public static IEnumerable<int[]> ProducePermutations(int length)
         {
             var initialPermutation = GenerateInitialPermutation(length);
 
             return ProducePermutations(initialPermutation);
         }
 
-        public static int[][] ProducePermutations(int[] array)
+        public static IEnumerable<int[]> ProducePermutations(int[] array)
         {
             int length = array.Length;
             int permutationsCount = Methods.Factorial(length);
 
-            var permutations = new int[permutationsCount][];
-            permutations[0] = new int[length];
+            var permutation = new int[length];
 
-            Buffer.BlockCopy(array, 0, permutations[0], 0, length * INT_SIZE);
+            Buffer.BlockCopy(array, 0, permutation, 0, length * INT_SIZE);
             int[] directions = GenerateInitialDirection(length);
 
             for (int i = 1; i < permutationsCount; i++)
             {
-                permutations[i] = new int[length];
-                Buffer.BlockCopy(permutations[i - 1], 0, permutations[i], 0, length * INT_SIZE);
+                var old = new int[length];
+                Buffer.BlockCopy(permutation, 0, old, 0, length * INT_SIZE); 
+                yield return old;
 
-                MakeStep(ref permutations[i], ref directions);
+                MakeStep(ref permutation, ref directions);
             }
 
-            return permutations;
+            yield return permutation;
         }
 
         private static void MakeStep(ref int[] permutation, ref int[] directions)

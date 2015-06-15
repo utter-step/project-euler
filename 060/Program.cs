@@ -81,7 +81,7 @@ namespace _060
                 }
             }
 
-            var r = FindCliques(LENGTH, 
+            var r = FindCliques(LENGTH,
                                 pairs.ToList(),
                                 new List<KeyValuePair<int, HashSet<int>>>(),
                                 new List<KeyValuePair<int, HashSet<int>>>());
@@ -106,7 +106,7 @@ namespace _060
 
         private static List<KeyValuePair<int, HashSet<int>>> FindCliques(
             int length,
-            List<KeyValuePair<int, HashSet<int>>> remainingNodes, 
+            List<KeyValuePair<int, HashSet<int>>> remainingNodes,
             List<KeyValuePair<int, HashSet<int>>> potentialClique,
             List<KeyValuePair<int, HashSet<int>>> skipNodes)
         {

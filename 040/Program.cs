@@ -74,20 +74,20 @@ namespace _040
 
         static int Count2(int x)
         {
-            if (((x >> 31) & 1) == 1) 
-                x *= -1; 
-            
-            int res = 0; 
-            while (x != 0) 
-            { 
-                if (x < 10) 
-                { 
-                    res += x; 
-                    return res; 
-                } 
-                res += x - (int)(x * 0.1) * 10; 
-                x = (int)(x * 0.1); 
-            } 
+            if (((x >> 31) & 1) == 1)
+                x *= -1;
+
+            int res = 0;
+            while (x != 0)
+            {
+                if (x < 10)
+                {
+                    res += x;
+                    return res;
+                }
+                res += x - (int)(x * 0.1) * 10;
+                x = (int)(x * 0.1);
+            }
             return res;
         }
 
