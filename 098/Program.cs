@@ -9,6 +9,8 @@ namespace _098
 {
     class Program
     {
+        private static HashSet<char> _set;
+
         static void Main(string[] args)
         {
             var words = File.OpenText("../../p098_words.txt")
@@ -21,28 +23,24 @@ namespace _098
 
         public static int Solve(IEnumerable<string> words)
         {
+            _set = new HashSet<char>();
+
             var anagrams = words.GroupBy(WordToKey).Where(g => g.Count() > 1);
-            var anagramsByLength = new Dictionary<int, Dictionary<string, string[]>>();
+            int maxLength = anagrams.Max(x => x.Key.Length);
+
+            var anagramsByLength = GroupAnagramsByLength(anagrams, maxLength);
+
+            var uniqueCount = new Dictionary<string, int>();
 
             foreach (var group in anagrams)
             {
-                if (anagramsByLength.ContainsKey(group.Key.Length))
-                {
-                    anagramsByLength[group.Key.Length][group.Key] = group.ToArray();
-                }
-                else
-                {
-                    anagramsByLength[group.Key.Length] = new Dictionary<string, string[]>{
-                        { group.Key, group.ToArray() },
-                    };
-                }
+                uniqueCount[group.Key] = CountUnique(group.Key);
             }
 
-            int maxLength = anagramsByLength.Max(pair => pair.Key);
             int maxFound = 0;
             int maxFoundLength = 0;
 
-            for (int i = (int)Math.Sqrt(Math.Pow(10, maxLength)); i >= 96; i--)
+            for (int i = (int)Math.Sqrt(Math.Pow(10, maxLength)) - 1; i >= 96; i--)
             {
                 int candidate = i * i;
                 var candidateString = candidate.ToString();
@@ -52,18 +50,17 @@ namespace _098
                     return maxFound;
                 }
 
-                if (!anagramsByLength.ContainsKey(candidateString.Length))
+                if (anagramsByLength[candidateString.Length] == null)
                 {
                     continue;
                 }
 
-                var candidateUnique = candidateString.Distinct().Count();
-
+                var candidateUnique = CountUnique(candidateString);
                 var currentAnagrams = anagramsByLength[candidateString.Length];
 
                 foreach (var pair in currentAnagrams)
                 {
-                    if (candidateUnique != pair.Key.Distinct().Count())
+                    if (candidateUnique != uniqueCount[pair.Key])
                     {
                         continue;
                     }
@@ -84,7 +81,21 @@ namespace _098
                 }
             }
 
-            return 0;
+            return maxFound;
+        }
+
+        public static int CountUnique(string word)
+        {
+            int count = 0;
+            foreach (var c in word)
+            {
+                if (_set.Add(c))
+                {
+                    count += 1;
+                }
+            }
+            _set.Clear();
+            return count;
         }
 
         public static string WordToKey(string word)
@@ -94,9 +105,31 @@ namespace _098
             return new String(chars);
         }
 
-        public static Dictionary<char, char> NumToTr(string num, string word)
+        public static Dictionary<string, string[]>[] GroupAnagramsByLength(
+            IEnumerable<IGrouping<string, string>> anagrams, int maxLength)
         {
-            var res = new Dictionary<char, char>();
+            var anagramsByLength = new Dictionary<string, string[]>[maxLength + 1];
+
+            foreach (var group in anagrams)
+            {
+                if (anagramsByLength[group.Key.Length] != null)
+                {
+                    anagramsByLength[group.Key.Length][group.Key] = group.ToArray();
+                }
+                else
+                {
+                    anagramsByLength[group.Key.Length] = new Dictionary<string, string[]>{
+                        { group.Key, group.ToArray() },
+                    };
+                }
+            }
+
+            return anagramsByLength;
+        }
+
+        public static char[] NumToTr(string num, string word)
+        {
+            var res = new char[127];
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -106,7 +139,7 @@ namespace _098
             return res;
         }
 
-        public static string ApplyTr(Dictionary<char, char> mask, string word)
+        public static string ApplyTr(char[] mask, string word)
         {
             return new String(word.Select(c => mask[c]).ToArray());
         }
