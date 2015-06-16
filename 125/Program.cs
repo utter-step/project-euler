@@ -17,7 +17,7 @@ namespace _125
         {
             var palindromicSums = new HashSet<long>();
 
-            int squareLimit = (int)Math.Sqrt(limit) + 1;
+            int squareLimit = NumUtils.SqrtUpper(limit);
 
             var partSums = SquarePartialSums(squareLimit);
 

@@ -16,7 +16,7 @@ namespace _003
 
         private static long MaxPrimeFactor(long num)
         {
-            int factorLimit = (int)Math.Sqrt(num) + 1;
+            int factorLimit = NumUtils.SqrtUpper(num);
 
             var primes = NumUtils.EratospheneSeive(factorLimit, 3);
 

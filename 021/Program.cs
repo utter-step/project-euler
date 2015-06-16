@@ -51,7 +51,7 @@ namespace _021
 
         private static int SumOfAmicable(int upperLimit)
         {
-            int maxPrimeFactor = (int)Math.Sqrt(upperLimit) + 1;
+            int maxPrimeFactor = NumUtils.SqrtUpper(upperLimit);
 
             NumUtils.PrecomputePrimes(maxPrimeFactor);
 

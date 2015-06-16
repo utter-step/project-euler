@@ -7,6 +7,18 @@ namespace Tools
 {
     public class NumUtils
     {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int SqrtUpper(int n)
+        {
+            return (int)Math.Sqrt(n) + 1;
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int SqrtUpper(long n)
+        {
+            return (int)Math.Sqrt(n) + 1;
+        }
+
         private static HashSet<int> _primes;
         private static int _primesLimit = 0;
         private const int CACHE_CONSTANT = 3;
@@ -38,7 +50,7 @@ namespace Tools
         {
             if (_primesLimit * _primesLimit < num)
             {
-                PrecomputePrimes((int)Math.Sqrt(num) + 1);
+                PrecomputePrimes(SqrtUpper(num));
             }
 
             var factors = new Dictionary<int, int>();
@@ -89,7 +101,7 @@ namespace Tools
 
         public static Dictionary<int, int> ComputePrimeFactorization(int num)
         {
-            int sqrt = (int)Math.Sqrt(num) + 1;
+            int sqrt = SqrtUpper(num);
             int maxFactor = sqrt;
 
             var primes = EratospheneSeive(maxFactor, 3);

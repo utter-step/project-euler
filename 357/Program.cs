@@ -48,7 +48,8 @@ namespace _357
 
         public static bool IsPrimeGenerating(int num)
         {
-            for (int i = 2; i <= (int)Math.Sqrt(num) + 1; i++)
+            var upper = NumUtils.SqrtUpper(num);
+            for (int i = 2; i <= upper; i++)
             {
                 if (num % i == 0 && !Primes.Contains(i + num / i))
                 {

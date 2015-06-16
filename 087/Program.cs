@@ -17,7 +17,7 @@ namespace _087
         {
             var sums = new HashSet<int>();
 
-            int squareRoot = (int)Math.Sqrt(upperLimit) + 1;
+            int squareRoot = NumUtils.SqrtUpper(upperLimit);
             int cubicRoot = (int)Math.Pow(upperLimit, 1.0 / 3) + 1;
             int fourthRoot = (int)Math.Pow(upperLimit, 1.0 / 4) + 1;
 
