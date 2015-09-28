@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 using Tools;
@@ -66,7 +65,7 @@ namespace _035
 
         static void Main(string[] args)
         {
-            Decorators.TimeItAccurate(ComputeResult, LIMIT, 10);
+            Decorators.Benchmark(ComputeResult, LIMIT);
         }
     }
 }

@@ -59,7 +59,7 @@ namespace _097
 
         static void Main(string[] args)
         {
-            Decorators.TimeItAccurate(ComputeLastDigits, 10, 10);
+            Decorators.Benchmark(ComputeLastDigits, 10);
         }
     }
 }

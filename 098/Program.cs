@@ -9,7 +9,21 @@ namespace _098
 {
     class Program
     {
-        private static HashSet<char> _set;
+        private static HashSet<char> _cSet;
+        private static HashSet<int> _iSet;
+
+        private static char[] _charMap = {
+            '0',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+        };
 
         static void Main(string[] args)
         {
@@ -23,7 +37,8 @@ namespace _098
 
         public static int Solve(IEnumerable<string> words)
         {
-            _set = new HashSet<char>();
+            _cSet = new HashSet<char>();
+            _iSet = new HashSet<int>();
 
             var anagrams = words.GroupBy(WordToKey).Where(g => g.Count() > 1);
             int maxLength = anagrams.Max(x => x.Key.Length);
@@ -43,20 +58,21 @@ namespace _098
             for (int i = (int)Math.Sqrt(Math.Pow(10, maxLength)) - 1; i >= 96; i--)
             {
                 int candidate = i * i;
-                var candidateString = candidate.ToString();
 
-                if (candidateString.Length < maxFoundLength)
+                var candidateLength = NumUtils.DigitsCount(candidate);
+
+                if (candidateLength < maxFoundLength)
                 {
                     return maxFound;
                 }
 
-                if (anagramsByLength[candidateString.Length] == null)
+                if (anagramsByLength[candidateLength] == null)
                 {
                     continue;
                 }
 
-                var candidateUnique = CountUnique(candidateString);
-                var currentAnagrams = anagramsByLength[candidateString.Length];
+                var candidateUnique = CountUniqueDigits(candidate);
+                var currentAnagrams = anagramsByLength[candidateLength];
 
                 foreach (var pair in currentAnagrams)
                 {
@@ -64,7 +80,12 @@ namespace _098
                     {
                         continue;
                     }
-                    var trMask = NumToTr(candidateString, pair.Value[0]);
+                    var trMask = NumToTr(candidate, pair.Value[0]);
+
+                    if (trMask == null)
+                    {
+                        continue;
+                    }
 
                     foreach (var word in pair.Value.Skip(1))
                     {
@@ -75,7 +96,7 @@ namespace _098
                                 Math.Max(candidate, maxFound),
                                 int.Parse(num)
                             );
-                            maxFoundLength = candidateString.Length;
+                            maxFoundLength = candidateLength;
                         }
                     }
                 }
@@ -89,12 +110,30 @@ namespace _098
             int count = 0;
             foreach (var c in word)
             {
-                if (_set.Add(c))
+                if (_cSet.Add(c))
                 {
                     count += 1;
                 }
             }
-            _set.Clear();
+            _cSet.Clear();
+            return count;
+        }
+
+        public static int CountUniqueDigits(int num)
+        {
+            int count = 0;
+            int nNum = (int)((0x1999999AL * num) >> 32);
+            while (num > 0)
+            {
+                if (_iSet.Add(num - nNum * 10))
+                {
+                    count++;
+                }
+                long invDivisor = 0x1999999A;
+                num = nNum;
+                nNum = (int)((invDivisor * nNum) >> 32);
+            }
+            _iSet.Clear();
             return count;
         }
 
@@ -127,13 +166,20 @@ namespace _098
             return anagramsByLength;
         }
 
-        public static char[] NumToTr(string num, string word)
+        public static char[] NumToTr(int num, string word)
         {
             var res = new char[127];
+            var digits = NumUtils.Digits(num);
+            var l = digits.Length;
 
-            for (int i = 0; i < word.Length; i++)
+            for (int i = word.Length - 1; i >= 0; i--)
             {
-                res[word[i]] = num[i];
+                if (res[word[i]] != '\0')
+                {
+                    return null;
+                }
+
+                res[word[i]] = _charMap[digits[l - i - 1]];
             }
 
             return res;

@@ -63,6 +63,8 @@ def num_to_mask(num, word):
     mask = {}
 
     for i in xrange(len(num)):
+        if word[i] in mask:
+            return
         mask[word[i]] = num[i]
 
     return mask
@@ -110,6 +112,8 @@ def solve(words):
         for key, words in anagrams_i.iteritems():
             if len(c_str_set) == unique_count[key]:
                 mask = num_to_mask(c_str, words[0])
+                if not mask:
+                    continue
                 for word in words[1:]:
                     num = apply_mask(mask, word)
                     if num[0] != '0' and is_square(int(num)):
@@ -119,5 +123,4 @@ def solve(words):
     return max_found
 
 
-solution = solve(words)
-print solution
+solve(words)

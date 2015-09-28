@@ -38,7 +38,6 @@ namespace _113
 
         private static void FillArrays(int steps)
         {
-
         }
 
         private static bool IsBouncy(BigInteger n)
