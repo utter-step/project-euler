@@ -5,8 +5,10 @@ using System.Runtime.CompilerServices;
 
 namespace Tools
 {
-    public class NumUtils
+    public static class NumUtils
     {
+        #region SqrtUpper
+
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static int SqrtUpper(int n)
         {
@@ -18,6 +20,8 @@ namespace Tools
         {
             return (int)Math.Sqrt(n) + 1;
         }
+
+        #endregion
 
         private static HashSet<int> _primes;
         private static int _primesLimit = 0;
@@ -210,6 +214,25 @@ namespace Tools
 
             return res;
         } 
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static long BinaryPower(long n, int exp)
+        {
+            long res = 1;
+            while (exp > 0)
+            {
+                if ((exp & 1) == 1)
+                {
+                    exp--;
+                    res *= n;
+                }
+
+                n *= n;
+                exp >>= 1;
+            }
+
+            return res;
+        }
         #endregion
 
         #region ModularBinaryPower
@@ -286,7 +309,7 @@ namespace Tools
 
             for (int i = 3; i < upperLimit; i += 2)
             {
-                primeList[i] |= true;
+                primeList[i] = true;
             }
 
             var primeSet = lowerLimit == 2 ? new HashSet<int> { 2 } : new HashSet<int>();
@@ -302,7 +325,7 @@ namespace Tools
                 {
                     for (int j = i * i; j < upperLimit; j += i)
                     {
-                        primeList[j] &= false;
+                        primeList[j] = false;
                     }
                 }
             }
@@ -357,16 +380,20 @@ namespace Tools
             return (int)s;
         }
 
-        public static int SumOfDigits(int n)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int SumOfDigits(int x)
         {
-            int s = 0;
-            while (n > 0)
-            {
-                s += n % 10;
-                n /= 10;
-            }
+            var res = 0;
+            var xNext = (int)((0x1999999AL * x) >> 32);
 
-            return s;
+            while (x >= 10)
+            {
+                res += x - xNext * 10;
+                x = xNext;
+                long invDivisor = 0x1999999A;
+                xNext = (int)((invDivisor * xNext) >> 32);;
+            }
+            return res;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -415,7 +442,7 @@ namespace Tools
 
             private bool WeakTest(int num)
             {
-                return CheckMask(num) && CheckSum(num);
+                return CheckSum(num) && CheckMask(num);
             }
 
             private bool StrongTest(int num)
@@ -425,7 +452,7 @@ namespace Tools
                     digitsSorted = baseNum.ToString().ToCharArray();
                     Array.Sort(digitsSorted);
                 }
-
+                    
                 var cs = num.ToString().ToCharArray();
                 if (cs.Length != digitsSorted.Length)
                 {
@@ -453,11 +480,14 @@ namespace Tools
             private static int CreateMask(int num)
             {
                 int mask = 0;
+                int xNext = (int)((0x1999999AL * num) >> 32);
 
                 while (num > 0)
                 {
-                    mask |= 1 << (num % 10);
-                    num /= 10;
+                    mask |= 1 << (num - xNext * 10);
+                    num = xNext;
+                    long invDivisor = 0x1999999A;
+                    xNext = (int)((invDivisor * xNext) >> 32);
                 }
 
                 return mask;
@@ -482,5 +512,84 @@ namespace Tools
             }
         }
         #endregion
+
+        #region Binary algorythms
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int NumLeadingZeroes(int x)
+        {
+            int y, m, n;
+
+            y = -(x >> 16);
+            m = (y >> 16) & 16;
+            n = 16 - m;
+            x >>= m;
+            y = x - 0x100;
+            m = (y >> 16) & 8;
+            n += m;
+            x <<= m;
+            y = x - 0x1000;
+            m = (y >> 16) & 4;
+            n += m;
+            x <<= m;
+            y = x - 0x4000;
+            m = (y >> 16) & 2;
+            n += m;
+            x <<= m;
+            y = x >> 14;
+            m = y & ~(y >> 1);
+            return n + 2 - m;
+        }
+
+        #endregion
+
+        private static int[] _binaryApproximation = {
+            9, 9, 9, 8, 8, 8,
+            7, 7, 7, 6, 6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 3,
+            2, 2, 2, 1, 1, 1, 0, 0, 0, 0
+        };
+
+        private static int[] _fixApproximation = {
+            1, 10, 100, 1000, 10000,
+            100000, 1000000, 10000000, 100000000, 1000000000
+        };
+
+        public static readonly int[] TenPows = {
+            0, 1, 10, 100, 1000, 10000, 100000,
+            1000000, 10000000, 100000000, 1000000000
+        };
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int IntLog10(int x)
+        {
+            int y;
+
+            y = _binaryApproximation[NumLeadingZeroes(x)];
+            if (x < _fixApproximation[y])
+            {
+                y = y - 1;
+            }
+            return y;
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int DigitsCount(int x)
+        {
+            return IntLog10(x) + 1;
+        }
+
+        public static int[] Digits(int x)
+        {
+            var res = new int[DigitsCount(x)];
+            int xNext = (int)((0x1999999AL * x) >> 32);
+            for (int i = 0; i < res.Length; i++)
+            {
+                res[i] = x - xNext * 10;
+                x = xNext;
+                long invDivisor = 0x1999999A;
+                xNext = (int)((invDivisor * xNext) >> 32);
+            }
+            return res;
+        }
     }
 }

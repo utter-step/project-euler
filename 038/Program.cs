@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
@@ -26,20 +22,7 @@ namespace _038
 
         static void Main(string[] args)
         {
-            var pc = new NumUtils.PandigitalChecker(123456788);
-
             Decorators.Benchmark(Solve);
-
-            //Console.WriteLine("Truly pandigital");
-            //Decorators.TimeItAccurate(pc.IsPandigital, 887654321, 10000000);
-
-            //Console.WriteLine("Mask ok, sum failed");
-            //Decorators.TimeItAccurate(pc.IsPandigital, 123456766, 10000000);
-
-            //Console.WriteLine("Sum and mask failed");
-            //Decorators.TimeItAccurate(pc.IsPandigital, 123456778, 10000000);
-
-            //Decorators.TimeItAccurate(Solve, 1000000);
         }
 
         static int Test()

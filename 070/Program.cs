@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Tools;
 
@@ -17,7 +14,7 @@ namespace _070
 
         private static int Solve(int upperLimit)
         {
-            primes = NumUtils.EratospheneSeive((int) Math.Sqrt(upperLimit) + 1);
+            primes = NumUtils.EratospheneSeive((int)Math.Sqrt(upperLimit) + 1);
 
             int minN = 0;
             double minRatio = 2;

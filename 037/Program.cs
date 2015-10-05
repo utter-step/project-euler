@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+
 using Tools;
 
 namespace _037
@@ -81,7 +81,7 @@ namespace _037
 
         static void Main(string[] args)
         {
-            Console.WriteLine(SumBitruncablePrimes(1000000));
+            Decorators.Benchmark(SumBitruncablePrimes, 1000000);
         }
     }
 }

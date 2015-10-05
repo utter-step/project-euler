@@ -12,18 +12,18 @@ namespace _119
 
         public static void Main(string[] args)
         {
-            Decorators.Benchmark(Solve);
+            Decorators.Benchmark(Solve, 5000);
         }
 
         public static long Solve()
         {
             var seq = new List<long>(N * 3);
 
-            for (int i = 2; i < N * 3; i++)
+            for (long i = 2; i < N * 3; i++)
             {
                 for (int j = 2; j < MAX_POW; j++)
                 {
-                    var p = (long)Math.Pow(i, j);
+                    var p = NumUtils.BinaryPower(i, j);
 
                     if (p.SumOfDigits() == i)
                     {
